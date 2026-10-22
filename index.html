@@ -213,8 +213,8 @@
       z-index: 100;
     }
 
-    picture { display: contents; }
-    img { max-width: 100%; height: auto; display: block; }
+    picture { display: block; width: 100%; height: 100%; }
+    img, video { max-width: 100%; height: auto; display: block; }
     a { color: inherit; text-decoration: none; }
     button { font: inherit; cursor: pointer; border: none; background: none; color: inherit; }
 
@@ -1567,6 +1567,13 @@
       background: var(--abyss);
     }
 
+    .final-banner > picture {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+
     .final-banner > picture img {
       position: absolute;
       inset: 0;
@@ -1924,7 +1931,10 @@
   <div class="navbar-wrap">
     <header class="navbar">
       <a href="#topo" class="brand" aria-label="Passeios de lancha Kelli Roque">
-        <img src="img/logo-kelli-square.webp" alt="Logo Kelli Roque Passeios Náuticos" class="brand-logo" width="44" height="44">
+        <picture style="width: 44px; height: 44px; flex-shrink: 0;">
+          <source srcset="img/logo-kelli-square.webp" type="image/webp">
+          <img src="img/logo-kelli-square.jpg" alt="Logo Kelli Roque Passeios Náuticos" class="brand-logo" width="44" height="44">
+        </picture>
         <div class="brand-text">
           <span class="brand-name">KELLI ROQUE</span>
           <span class="brand-sub">Capitólio · MG</span>
@@ -2042,11 +2052,14 @@
                 id="kelliMainVideo"
                 src="videos/apresentacao-kelli-roque.mp4"
                 poster="videos/poster-apresentacao.jpg"
+                autoplay
                 playsinline
                 webkit-playsinline
+                x5-playsinline
                 muted
                 loop
-                preload="metadata">
+                preload="auto">
+                <source src="videos/apresentacao-kelli-roque.mp4" type="video/mp4">
               </video>
 
               <button type="button" class="video-sound-cta" id="vidUnmuteOverlay">
@@ -2129,7 +2142,7 @@
               <span class="stop-badge">Parada 01</span>
               <picture>
                 <source srcset="img/canions-principal.webp" type="image/webp">
-                <img src="img/canions-principal.jpg" alt="Cachoeira e paredões dos Cânions de Capitólio com lancha" loading="lazy" data-lightbox>
+                <img src="img/canions-principal.jpg" alt="Cachoeira e paredões dos Cânions de Capitólio com lancha" decoding="async" data-lightbox>
               </picture>
             </div>
             <div class="stop-info">
@@ -2156,7 +2169,7 @@
               <span class="stop-badge">Parada 02</span>
               <picture>
                 <source srcset="img/lagoa-azul-2.webp" type="image/webp">
-                <img src="img/lagoa-azul-2.jpg" alt="Vista aérea da Lagoa Azul e bar flutuante em Capitólio MG" loading="lazy" data-lightbox>
+                <img src="img/lagoa-azul-2.jpg" alt="Vista aérea da Lagoa Azul e bar flutuante em Capitólio MG" decoding="async" data-lightbox>
               </picture>
             </div>
             <div class="stop-info">
@@ -2183,7 +2196,7 @@
               <span class="stop-badge">Parada 03</span>
               <picture>
                 <source srcset="img/vale-dos-tucanos.webp" type="image/webp">
-                <img src="img/vale-dos-tucanos.jpg" alt="Lanchas nos paredões do Vale dos Tucanos em Capitólio" loading="lazy" data-lightbox>
+                <img src="img/vale-dos-tucanos.jpg" alt="Lanchas nos paredões do Vale dos Tucanos em Capitólio" decoding="async" data-lightbox>
               </picture>
             </div>
             <div class="stop-info">
@@ -2336,13 +2349,13 @@
             <figure>
               <picture>
                 <source srcset="img/canions-corredor.webp" type="image/webp">
-                <img src="img/canions-corredor.jpg" alt="Navegação pelos Cânions de Capitólio com a Kelli Roque" loading="lazy" data-lightbox>
+                <img src="img/canions-corredor.jpg" alt="Navegação pelos Cânions de Capitólio com a Kelli Roque" decoding="async" data-lightbox>
               </picture>
             </figure>
             <figure>
               <picture>
                 <source srcset="img/lancha-furnas.webp" type="image/webp">
-                <img src="img/lancha-furnas.jpg" alt="Lancha equipada no Lago de Furnas" loading="lazy" data-lightbox>
+                <img src="img/lancha-furnas.jpg" alt="Lancha equipada no Lago de Furnas" decoding="async" data-lightbox>
               </picture>
             </figure>
           </div>
@@ -2382,27 +2395,45 @@
 
       <div class="gal-track">
         <figure class="gal-item tall reveal">
-          <img src="img/canions-kelli-1.webp" alt="Cânions de Capitólio — Queda d'água" loading="lazy" data-lightbox>
+          <picture>
+            <source srcset="img/canions-kelli-1.webp" type="image/webp">
+            <img src="img/canions-kelli-1.jpg" alt="Cânions de Capitólio — Queda d'água" decoding="async" data-lightbox>
+          </picture>
           <figcaption class="gal-cap">Cânions de Capitólio</figcaption>
         </figure>
         <figure class="gal-item wide reveal">
-          <img src="img/lagoa-azul-2.webp" alt="Vista aérea da Lagoa Azul e bar flutuante" loading="lazy" data-lightbox>
+          <picture>
+            <source srcset="img/lagoa-azul-2.webp" type="image/webp">
+            <img src="img/lagoa-azul-2.jpg" alt="Vista aérea da Lagoa Azul e bar flutuante" decoding="async" data-lightbox>
+          </picture>
           <figcaption class="gal-cap">Lagoa Azul · Bar Flutuante</figcaption>
         </figure>
         <figure class="gal-item reveal">
-          <img src="img/vale-dos-tucanos-2.webp" alt="Paredões do Vale dos Tucanos" loading="lazy" data-lightbox>
+          <picture>
+            <source srcset="img/vale-dos-tucanos-2.webp" type="image/webp">
+            <img src="img/vale-dos-tucanos-2.jpg" alt="Paredões do Vale dos Tucanos" decoding="async" data-lightbox>
+          </picture>
           <figcaption class="gal-cap">Vale dos Tucanos</figcaption>
         </figure>
         <figure class="gal-item reveal">
-          <img src="img/lagoa-azul.webp" alt="Piscina natural na Lagoa Azul" loading="lazy" data-lightbox>
+          <picture>
+            <source srcset="img/lagoa-azul.webp" type="image/webp">
+            <img src="img/lagoa-azul.jpg" alt="Piscina natural na Lagoa Azul" decoding="async" data-lightbox>
+          </picture>
           <figcaption class="gal-cap">Piscina Natural · Lagoa Azul</figcaption>
         </figure>
         <figure class="gal-item tall reveal">
-          <img src="img/canions-kelli-2.webp" alt="Cachoeira dupla nos Cânions de Capitólio" loading="lazy" data-lightbox>
+          <picture>
+            <source srcset="img/canions-kelli-2.webp" type="image/webp">
+            <img src="img/canions-kelli-2.jpg" alt="Cachoeira dupla nos Cânions de Capitólio" decoding="async" data-lightbox>
+          </picture>
           <figcaption class="gal-cap">Cachoeira dos Cânions</figcaption>
         </figure>
         <figure class="gal-item wide reveal">
-          <img src="img/diversao-familia.webp" alt="Banho nas águas calmas do Lago de Furnas" loading="lazy" data-lightbox>
+          <picture>
+            <source srcset="img/diversao-familia.webp" type="image/webp">
+            <img src="img/diversao-familia.jpg" alt="Banho nas águas calmas do Lago de Furnas" decoding="async" data-lightbox>
+          </picture>
           <figcaption class="gal-cap">Banho no Lago de Furnas</figcaption>
         </figure>
       </div>
@@ -2518,10 +2549,13 @@
   <section class="final-banner" id="rodape">
     <picture>
       <source srcset="img/canions-principal.webp" type="image/webp">
-      <img src="img/canions-principal.jpg" alt="" loading="lazy" decoding="async">
+      <img src="img/canions-principal.jpg" alt="" decoding="async">
     </picture>
     <div class="wrap reveal">
-      <img src="img/logo-kelli-square.webp" alt="Logo Kelli Roque Passeios Náuticos" width="96" height="96" style="margin: 0 auto 16px; border-radius: 18px; box-shadow: 0 10px 28px rgba(0,0,0,0.45);">
+      <picture style="width: 96px; height: 96px; margin: 0 auto 16px;">
+        <source srcset="img/logo-kelli-square.webp" type="image/webp">
+        <img src="img/logo-kelli-square.jpg" alt="Logo Kelli Roque Passeios Náuticos" width="96" height="96" style="width: 96px; height: 96px; margin: 0 auto 16px; border-radius: 18px; box-shadow: 0 10px 28px rgba(0,0,0,0.45);">
+      </picture>
       <h2 class="sec-title" style="max-width: 15ch; margin: 0 auto 12px;">
         Seu melhor dia em Capitólio <span class="serif-italic">começa aqui.</span>
       </h2>
@@ -2756,9 +2790,18 @@
             } else if (!entry.isIntersecting && !vid.paused) {
               vid.pause();
             }
-          }, { threshold: 0.35 });
+          }, { threshold: 0.15 });
           vidObserver.observe(vid);
+        } else {
+          vid.play().catch(() => {});
         }
+
+        // Garante primeiro frame e play silencioso em celulares, tablets e iPads
+        vid.muted = true;
+        vid.defaultMuted = true;
+        vid.setAttribute('playsinline', '');
+        vid.setAttribute('webkit-playsinline', '');
+        vid.play().catch(() => {});
 
         syncVideoUI();
       }
@@ -2806,17 +2849,24 @@
 
         // Reveal em lotes nas seções
         ScrollTrigger.batch('.reveal', {
-          start: 'top 88%',
+          start: 'top 92%',
           once: true,
           onEnter: els => gsap.from(els, {
-            y: 26,
+            y: 22,
             opacity: 0.001,
-            duration: 0.65,
-            stagger: 0.08,
+            duration: 0.6,
+            stagger: 0.06,
             ease: 'power3.out',
             clearProps: 'transform,opacity'
           })
         });
+
+        // Atualizar posições quando imagens/vídeos carregarem em celulares e tablets
+        document.querySelectorAll('img, video').forEach(media => {
+          media.addEventListener('load', () => ScrollTrigger.refresh(), { once: true });
+          media.addEventListener('loadeddata', () => ScrollTrigger.refresh(), { once: true });
+        });
+        setTimeout(() => ScrollTrigger.refresh(), 800);
 
         // Animação dos nós da rota náutica
         gsap.from('.route-node', {
