@@ -1,11 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <defs>
-    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#059669"/>
-      <stop offset="100%" stop-color="#0369a1"/>
-    </linearGradient>
-  </defs>
-  <rect width="64" height="64" rx="16" fill="url(#g)"/>
-  <path d="M12 40c6-3 14-3 20 0s14 3 20 0M16 33l16-14 16 14H16z" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M10 48c7-3 15-3 22 0s15 3 22 0" fill="none" stroke="#6ee7b7" stroke-width="3.5" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="16" fill="#07221E"/>
+  <path d="M10 42C16 37 22 37 28 42C34 47 40 47 46 42C49 39.5 52 38.5 54 39" stroke="#10B981" stroke-width="4" stroke-linecap="round"/>
+  <path d="M10 50C16 45 22 45 28 50C34 55 40 55 46 50C49 47.5 52 46.5 54 47" stroke="#F59E0B" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M16 33L32 16L48 33H16Z" fill="#10B981" fill-opacity="0.22" stroke="#10B981" stroke-width="3" stroke-linejoin="round"/>
+  <text x="32" y="31" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-weight="800" font-size="14">KR</text>
 </svg>
