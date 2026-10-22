@@ -2031,8 +2031,11 @@
                 Olá, Kelli, tudo bem? Estou com 2 adultos e queria marcar um passeio de lancha (Lancha Privativa), período Manhã, conhecendo: Cânions de Capitólio, Lagoa Azul, Vale dos Tucanos.
               </div>
               <a href="https://wa.me/5535998235432" target="_blank" rel="noopener" id="btnEnviarWa" class="btn-primary" style="width: 100%;">
-                <span>Falar com Kelli</span>
+                <span>Falar com Kelli · (35) 99823-5432</span>
                 <span class="btn-icon-circle">→</span>
+              </a>
+              <a href="https://wa.me/5537998386917" target="_blank" rel="noopener" id="btnEnviarWa2" class="btn-glass" style="width: 100%; justify-content: center; border-radius: 999px; padding: 12px 18px; font-weight: 600;">
+                <span>WhatsApp 2 · (37) 99838-6917</span>
               </a>
             </aside>
           </div>
@@ -2186,7 +2189,7 @@
             <ul class="info-pills">
               <li><small>Localização</small><b>Rodovia MG-050, KM 306 · Capitólio, MG</b></li>
               <li><small>Saídas</small><b>Todos os dias · Manhã e Tarde</b></li>
-              <li><small>Atendimento</small><b>(35) 99823-5432 · (37) 99838-6917 · Kelli e Dara</b></li>
+              <li><small>Atendimento</small><b><a href="https://wa.me/5535998235432" target="_blank" rel="noopener" style="text-decoration: underline;">(35) 99823-5432</a> · <a href="https://wa.me/5537998386917" target="_blank" rel="noopener" style="text-decoration: underline;">(37) 99838-6917</a> · Kelli e Dara</b></li>
             </ul>
             <div>
               <a href="https://www.google.com/maps/search/?api=1&query=Passeios+de+lancha+Kelli+Roque+Capitolio+MG&query_place_id=ChIJnaD4ukF5eAwRujDiKt4jXFk" target="_blank" rel="noopener noreferrer" class="btn-primary">
@@ -2247,10 +2250,15 @@
       <p class="sec-sub" style="margin: 0 auto 24px; color: var(--sky-100);">
         Reserve sua lancha privativa ou passeio compartilhado direto no WhatsApp.
       </p>
-      <a href="https://wa.me/5535998235432?text=Ol%C3%A1%2C%20Kelli!%20Vim%20pelo%20site%20e%20quero%20agendar%20um%20passeio%20de%20lancha." target="_blank" rel="noopener" class="btn-primary">
-        <span>Falar com Kelli</span>
-        <span class="btn-icon-circle">→</span>
-      </a>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; align-items: center;">
+        <a href="https://wa.me/5535998235432?text=Ol%C3%A1%2C%20Kelli!%20Vim%20pelo%20site%20e%20quero%20agendar%20um%20passeio%20de%20lancha." target="_blank" rel="noopener" class="btn-primary">
+          <span>Falar com Kelli · (35) 99823-5432</span>
+          <span class="btn-icon-circle">→</span>
+        </a>
+        <a href="https://wa.me/5537998386917?text=Ol%C3%A1%2C%20Kelli!%20Vim%20pelo%20site%20e%20quero%20agendar%20um%20passeio%20de%20lancha." target="_blank" rel="noopener" class="btn-glass" style="border-radius: 999px; padding: 14px 22px; font-weight: 600;">
+          <span>WhatsApp 2 · (37) 99838-6917</span>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -2306,6 +2314,7 @@
 
       const el = document.getElementById('pResumo');
       const btn = document.getElementById('btnEnviarWa');
+      const btn2 = document.getElementById('btnEnviarWa2');
       if (el) {
         el.textContent = msg;
         if (window.gsap) {
@@ -2313,6 +2322,7 @@
         }
       }
       if (btn) btn.href = `https://wa.me/5535998235432?text=${encodeURIComponent(msg)}`;
+      if (btn2) btn2.href = `https://wa.me/5537998386917?text=${encodeURIComponent(msg)}`;
     }
 
     window.changeStep = function(key, delta) {
