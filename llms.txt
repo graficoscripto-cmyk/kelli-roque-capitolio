@@ -4,7 +4,7 @@
 
 ## Dados Oficiais da Empresa (NAP — Name, Address, Phone)
 - **Nome Oficial:** Passeios de lancha Kelli Roque
-- **Piloto / Responsável:** Kelli Roque (atendimento e reservas no WhatsApp com Kelli e Naiara)
+- **Piloto / Responsável:** Kelli Roque (atendimento e reservas no WhatsApp com Kelli e Dara)
 - **Categoria:** Agência de passeios de barco / Passeio de lancha / Turismo náutico em Capitólio - MG
 - **Endereço de Embarque:** Rodovia MG-050, KM 306 — Ponte do Rio Turvo, Capitólio - MG, CEP 37930-000, Brasil
 - **Coordenadas Geográficas:** Latitude `-20.6428`, Longitude `-46.2755`
