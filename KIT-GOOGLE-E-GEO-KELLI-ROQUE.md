@@ -5,7 +5,7 @@ Este documento reúne tudo o que já foi configurado no código do site e o pass
 ## 1. O que já está 100% pronto e ativo no site
 - **Schema `@graph` JSON-LD Completo (`index.html`):**
   - `WebSite` + `WebPage` + `BreadcrumbList`
-  - `LocalBusiness` + `TravelAgency` + `BoatTourAgency` com NAP oficial (`Passeios de lancha Kelli Roque`, `Rodovia MG-050, KM 306 — Ponte do Rio Turvo, Capitólio - MG, 37930-000`, `+55-35-99823-5432`)
+  - `LocalBusiness` + `TravelAgency` + `BoatTourAgency` com NAP oficial (`Passeios de lancha Kelli Roque`, `Rodovia MG-050, KM 306 — Ponte do Rio Turvo, Capitólio - MG, 37930-000`, `+55-35-99823-5432` e `+55-37-99838-6917`)
   - Coordenadas exatas (`-20.6428, -46.2755`), `hasMap` apontando para o Place ID oficial (`ChIJnaD4ukF5eAwRujDiKt4jXFk`)
   - `AggregateRating` (`5.0` estrelas com `174` avaliações reais) + `Review` estruturados
   - `OfferCatalog` com os passeios oficiais (**Cânions de Capitólio**, **Lagoa Azul** e **Vale dos Tucanos** — sem Cascata)
