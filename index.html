@@ -2633,8 +2633,10 @@
           gsap.fromTo(el, { borderColor: '#38BDF8', backgroundColor: 'rgba(14,165,233,0.22)' }, { borderColor: 'rgba(125,211,252,0.2)', backgroundColor: 'rgba(3,13,30,0.78)', duration: 0.45 });
         }
       }
-      if (btn) btn.href = `https://wa.me/5535998235432?text=${encodeURIComponent(msg)}`;
-      if (btn2) btn2.href = `https://wa.me/5537998386917?text=${encodeURIComponent(msg)}`;
+      const w1 = window.__kelliWa1 || '5535998235432';
+      const w2 = window.__kelliWa2 || '5537998386917';
+      if (btn) btn.href = `https://wa.me/${w1}?text=${encodeURIComponent(msg)}`;
+      if (btn2) btn2.href = `https://wa.me/${w2}?text=${encodeURIComponent(msg)}`;
     }
 
     window.changeStep = function(key, delta) {
@@ -2879,6 +2881,230 @@
           scrollTrigger: { trigger: '.route-map-bar', start: 'top 86%', once: true }
         });
       });
+
+      // Sincronização dinâmica com o Painel da Kelli (site-data.json)
+      function bindLightboxEvents() {
+        const lb = document.getElementById('lightbox');
+        const lbImg = document.getElementById('lightboxImg');
+        if (!lb || !lbImg) return;
+        document.querySelectorAll('[data-lightbox]').forEach(img => {
+          if (img.dataset.lbBound) return;
+          img.dataset.lbBound = '1';
+          img.addEventListener('click', () => {
+            lbImg.src = img.currentSrc || img.src;
+            lb.classList.add('open');
+          });
+        });
+      }
+
+      fetch('site-data.json?t=' + Date.now())
+        .then(r => r.ok ? r.json() : null)
+        .then(data => {
+          if (!data) return;
+
+          // 1. Hero
+          if (data.hero) {
+            const ratingEl = document.querySelector('.pill-rating span:last-child');
+            if (ratingEl && data.hero.ratingText) ratingEl.textContent = data.hero.ratingText;
+            const h1El = document.querySelector('.hero h1');
+            if (h1El && data.hero.titleMain) {
+              h1El.innerHTML = `${data.hero.titleMain} <span class="serif-italic">${data.hero.titleItalic || ''}</span>`;
+            }
+            const leadEl = document.querySelector('.hero-lead');
+            if (leadEl && data.hero.lead) {
+              leadEl.textContent = data.hero.lead;
+            }
+          }
+
+          // 2. Contatos e Localização
+          if (data.contact) {
+            const w1 = (data.contact.whatsapp1 || '5535998235432').replace(/\D/g, '');
+            const w2 = (data.contact.whatsapp2 || '5537998386917').replace(/\D/g, '');
+            const l1 = data.contact.whatsapp1Label || '(35) 99823-5432';
+            const l2 = data.contact.whatsapp2Label || '(37) 99838-6917';
+            window.__kelliWa1 = w1;
+            window.__kelliWa2 = w2;
+
+            const btn1 = document.getElementById('btnEnviarWa');
+            if (btn1) {
+              const sp = btn1.querySelector('span:first-child');
+              if (sp) sp.textContent = `Falar com Kelli · ${l1}`;
+            }
+            const btn2 = document.getElementById('btnEnviarWa2');
+            if (btn2) {
+              const sp = btn2.querySelector('span:first-child');
+              if (sp) sp.textContent = `WhatsApp 2 · ${l2}`;
+            }
+
+            const pills = document.querySelectorAll('#embarque .info-pills li');
+            if (pills[0] && data.contact.locationAddress) {
+              pills[0].innerHTML = `<small>Localização</small><b>${data.contact.locationAddress}</b>`;
+            }
+            if (pills[1] && data.contact.scheduleText) {
+              pills[1].innerHTML = `<small>Saídas</small><b>${data.contact.scheduleText}</b>`;
+            }
+            if (pills[2]) {
+              const nomes = [data.contact.pilotName || 'Kelli', data.contact.attendantName].filter(Boolean).join(' e ');
+              pills[2].innerHTML = `<small>Atendimento</small><b><a href="https://wa.me/${w1}" target="_blank" rel="noopener" style="text-decoration: underline;">${l1}</a> · <a href="https://wa.me/${w2}" target="_blank" rel="noopener" style="text-decoration: underline;">${l2}</a> · ${nomes}</b>`;
+            }
+          }
+
+          // 3. Vídeo
+          if (data.video) {
+            const vidSec = document.getElementById('apresentacao');
+            if (vidSec) vidSec.style.display = data.video.enabled === false ? 'none' : '';
+            const vBadge = document.querySelector('#kelliVideoWrap .video-badge-top span:last-child');
+            if (vBadge && data.video.badge) vBadge.textContent = data.video.badge;
+            const vTitle = document.querySelector('#apresentacao .sec-title');
+            if (vTitle && data.video.titleMain) {
+              vTitle.innerHTML = `${data.video.titleMain} <span class="serif-italic">${data.video.titleItalic || ''}</span>`;
+            }
+            const vDesc = document.querySelector('#apresentacao .sec-sub');
+            if (vDesc && data.video.description) vDesc.textContent = data.video.description;
+          }
+
+          // 4. Paradas do Roteiro
+          if (Array.isArray(data.stops)) {
+            const activeStops = data.stops.filter(s => s && s.enabled !== false);
+            if (activeStops.length > 0) {
+              // Atualiza métricas do topo e título da seção
+              const hMetricStops = document.querySelectorAll('.hero-metrics .h-metric')[1];
+              if (hMetricStops) {
+                hMetricStops.innerHTML = `<b>${activeStops.length} ${activeStops.length === 1 ? 'Parada' : 'Paradas'}</b><small>${activeStops.map(s => s.shortName || s.title).join(' · ')}</small>`;
+              }
+              const rotTitle = document.querySelector('#roteiro .sec-title');
+              if (rotTitle) {
+                rotTitle.innerHTML = `${activeStops.length} ${activeStops.length === 1 ? 'parada inesquecível' : 'paradas inesquecíveis'} em <span class="serif-italic">Capitólio.</span>`;
+              }
+
+              // Barra Náutica
+              const routeNodes = document.querySelector('#roteiro .route-nodes');
+              if (routeNodes) {
+                const nodesHtml = [
+                  `<div class="route-node"><span class="node-dot gold">⚓</span><div><b>Embarque</b><small>Ponte do Rio Turvo</small></div></div>`
+                ].concat(activeStops.map((s, idx) => {
+                  const num = String(idx + 1).padStart(2, '0');
+                  return `<div class="route-node"><span class="node-dot">${num}</span><div><b>${s.shortName || s.title}</b><small>${s.shortSub || ''}</small></div></div>`;
+                })).join('');
+                routeNodes.innerHTML = nodesHtml;
+              }
+
+              // Cards de Paradas
+              const stopsStack = document.querySelector('#roteiro .stops-stack');
+              if (stopsStack) {
+                stopsStack.innerHTML = activeStops.map((s, idx) => {
+                  const badge = s.badge || `Parada ${String(idx + 1).padStart(2, '0')}`;
+                  const img = s.image || 'img/canions-principal.jpg';
+                  const webp = s.webp || img;
+                  const safeTitle = (s.title || '').replace(/'/g, "\\'");
+                  return `
+                    <div class="stop-shell">
+                      <article class="stop-card">
+                        <div class="stop-photo">
+                          <span class="stop-badge">${badge}</span>
+                          <picture>
+                            <source srcset="${webp}" type="image/webp">
+                            <img src="${img}" alt="${s.title || ''}" decoding="async" data-lightbox>
+                          </picture>
+                        </div>
+                        <div class="stop-info">
+                          <div class="stop-tags">
+                            ${s.tag1 ? `<span>${s.tag1}</span>` : ''}
+                            ${s.tag2 ? `<span>${s.tag2}</span>` : ''}
+                          </div>
+                          <h3 class="stop-title">${s.title || ''}</h3>
+                          <p class="stop-text">${s.description || ''}</p>
+                          <button type="button" class="stop-btn" onclick="selectStopInPlanner('${safeTitle}')">
+                            <span>Incluir no passeio</span>
+                            <span>→</span>
+                          </button>
+                        </div>
+                      </article>
+                    </div>`;
+                }).join('');
+              }
+
+              // Seletor do Simulador
+              const stopsSelector = document.getElementById('stopsSelector');
+              if (stopsSelector) {
+                state.paradas = activeStops.map(s => s.title);
+                stopsSelector.innerHTML = activeStops.map(s => `
+                  <button type="button" class="stop-check active" data-stop="${s.title}">
+                    <span class="check-box">✓</span>
+                    <span>${s.title}</span>
+                  </button>`).join('');
+
+                stopsSelector.querySelectorAll('.stop-check').forEach(btn => {
+                  btn.addEventListener('click', () => {
+                    const st = btn.dataset.stop;
+                    if (state.paradas.includes(st)) {
+                      if (state.paradas.length > 1) {
+                        state.paradas = state.paradas.filter(x => x !== st);
+                        btn.classList.remove('active');
+                      }
+                    } else {
+                      state.paradas.push(st);
+                      btn.classList.add('active');
+                    }
+                    updateSummary();
+                  });
+                });
+              }
+            }
+          }
+
+          // 5. A Lancha & Piloto
+          if (data.pilot) {
+            const pCardTitle = document.querySelector('#piloto .pilot-perks-card h3');
+            if (pCardTitle && data.pilot.cardTitle) pCardTitle.textContent = data.pilot.cardTitle;
+            const pCardDesc = document.querySelector('#piloto .pilot-perks-card p');
+            if (pCardDesc && data.pilot.cardDescription) pCardDesc.textContent = data.pilot.cardDescription;
+            const pFigs = document.querySelectorAll('#piloto .pilot-photos-grid figure');
+            if (pFigs[0] && data.pilot.photo1) {
+              pFigs[0].innerHTML = `<picture><source srcset="${data.pilot.photo1Webp || data.pilot.photo1}" type="image/webp"><img src="${data.pilot.photo1}" alt="Foto da lancha 1" decoding="async" data-lightbox></picture>`;
+            }
+            if (pFigs[1] && data.pilot.photo2) {
+              pFigs[1].innerHTML = `<picture><source srcset="${data.pilot.photo2Webp || data.pilot.photo2}" type="image/webp"><img src="${data.pilot.photo2}" alt="Foto da lancha 2" decoding="async" data-lightbox></picture>`;
+            }
+          }
+
+          // 6. Galeria de Fotos
+          if (Array.isArray(data.gallery)) {
+            const activeGal = data.gallery.filter(g => g && g.enabled !== false);
+            const galTrack = document.querySelector('#galeria .gal-track');
+            if (galTrack && activeGal.length > 0) {
+              galTrack.innerHTML = activeGal.map(g => {
+                const sz = g.size === 'tall' ? 'tall' : (g.size === 'wide' ? 'wide' : '');
+                const img = g.image || '';
+                const webp = g.webp || img;
+                return `
+                  <figure class="gal-item ${sz}">
+                    <picture>
+                      <source srcset="${webp}" type="image/webp">
+                      <img src="${img}" alt="${g.caption || 'Passeio de lancha Kelli Roque'}" decoding="async" data-lightbox>
+                    </picture>
+                    <figcaption class="gal-cap">${g.caption || ''}</figcaption>
+                  </figure>`;
+              }).join('');
+            }
+          }
+
+          // 7. FAQ
+          if (Array.isArray(data.faq) && data.faq.length > 0) {
+            const faqGrid = document.querySelector('#perguntas .faq-grid');
+            if (faqGrid) {
+              faqGrid.innerHTML = data.faq.map((f, i) => `
+                <details class="faq-item" ${i < 2 ? 'open' : ''}>
+                  <summary>${f.question || ''}</summary>
+                  <p>${f.answer || ''}</p>
+                </details>`).join('');
+            }
+          }
+
+          updateSummary();
+          bindLightboxEvents();
+        })
+        .catch(() => {});
     });
   </script>
 </body>
