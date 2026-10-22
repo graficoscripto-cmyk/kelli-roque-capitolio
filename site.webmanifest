@@ -4,8 +4,8 @@
   "description": "Passeios de lancha privativos e compartilhados no Lago de Furnas em Capitólio - MG: Cânions de Capitólio, Lagoa Azul e Vale dos Tucanos.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#061b18",
-  "theme_color": "#0b3b34",
+  "background_color": "#041022",
+  "theme_color": "#0284c7",
   "icons": [
     {
       "src": "/favicon-192x192.png",
