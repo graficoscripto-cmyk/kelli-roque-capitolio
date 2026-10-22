@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Passeios de Lancha Kelli Roque | Cânions de Capitólio, Lagoa Azul e Vale dos Tucanos</title>
-  <meta name="description" content="Passeios de lancha privativos e compartilhados no Lago de Furnas em Capitólio - MG com a piloto Kelli Roque. Visite os Cânions de Capitólio, Lagoa Azul e Vale dos Tucanos. Nota 5,0 ★ com 174 avaliações no Google!">
+  <meta name="description" content="★ 5,0 no Google (174 avaliações)! Passeios de lancha privativos e compartilhados no Lago de Furnas em Capitólio - MG com a piloto Kelli Roque. Cânions de Capitólio, Lagoa Azul e Vale dos Tucanos saindo da Ponte do Rio Turvo.">
   <meta name="keywords" content="passeio de lancha capitólio, kelli roque capitólio, passeios de lancha kelli roque, cânions de capitólio, lagoa azul capitólio, vale dos tucanos capitólio, lancha privativa capitólio, lago de furnas">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="author" content="Passeios de lancha Kelli Roque">
@@ -49,7 +49,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Schema.org JSON-LD (@graph para Google SEO + GEO) -->
   <script type="application/ld+json">
@@ -115,7 +115,7 @@
             "name": "Quais paradas fazem parte do passeio?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Visitamos os Cânions de Capitólio, a Lagoa Azul (com cachoeira e bar flutuante), o Vale dos Tucanos e o Lago de Escarpas."
+              "text": "Visitamos os Cânions de Capitólio, a Lagoa Azul (com cachoeira e bar flutuante) e o Vale dos Tucanos."
             }
           },
           {
@@ -131,7 +131,7 @@
             "name": "Posso levar bebidas e pets?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sim! A lancha possui cooler térmico a bordo e aceitamos pets nos passeios privativos."
+              "text": "Sim! A lancha possui cooler térmico a bordo e aceitamos pets nos passeios."
             }
           }
         ]
@@ -142,28 +142,28 @@
 
   <style>
     :root {
-      --bg-deep: #041022;
-      --bg-dark: #071b36;
-      --bg-light: #f5f9fd;
-      --bg-soft: #ebf3fb;
-      --white: #ffffff;
-      --blue-700: #0369a1;
-      --blue-600: #0284c7;
-      --blue-500: #0ea5e9;
-      --blue-400: #38bdf8;
-      --blue-300: #7dd3fc;
-      --amber-400: #fbbf24;
-      --text-dark: #081a2e;
-      --text-muted: #4a6380;
-      --text-light: #f0f7ff;
-      --border-light: rgba(8, 26, 46, 0.08);
-      --shadow-card: 0 24px 60px -18px rgba(4, 16, 34, 0.10);
-      --radius-xl: 28px;
-      --radius-lg: 22px;
-      --radius-md: 14px;
-      --radius-pill: 999px;
-      --font-display: 'Bricolage Grotesque', sans-serif;
-      --font-serif: 'Instrument Serif', serif;
+      --abyss: #030D1E;
+      --deep: #061833;
+      --navy: #0A254C;
+      --navy-card: #092042;
+      --lagoon-bg: #CFE8FA;
+      --lagoon-bg-2: #BFE0F7;
+      --lagoon-card: rgba(255, 255, 255, 0.78);
+      --sky-600: #0284C7;
+      --sky-500: #0EA5E9;
+      --sky-400: #38BDF8;
+      --sky-300: #7DD3FC;
+      --sky-100: #E0F2FE;
+      --gold-400: #FBBF24;
+      --gold-500: #F59E0B;
+      --ink: #06172E;
+      --ink-soft: #2C4A6F;
+      --text-light: #F0F8FF;
+      --text-dim: rgba(224, 242, 254, 0.76);
+      --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+      --ease-spring: cubic-bezier(0.32, 0.72, 0, 1);
+      --font-display: 'Bricolage Grotesque', system-ui, sans-serif;
+      --font-serif: 'Instrument Serif', Georgia, serif;
       --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
     }
 
@@ -175,154 +175,249 @@
 
     html {
       scroll-behavior: smooth;
-      overflow-x: hidden;
-      background-color: var(--bg-deep);
-      color: var(--text-dark);
+      -webkit-text-size-adjust: 100%;
+      background-color: var(--abyss);
+      color: var(--text-light);
       font-family: var(--font-sans);
       -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
     }
 
     body {
       overflow-x: hidden;
-      background-color: var(--bg-light);
+      background-color: var(--abyss);
       line-height: 1.55;
+      position: relative;
     }
 
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
+    /* Film grain sutil fixo (GPU-safe) */
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 90;
+      opacity: 0.026;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
+    /* Barra de progresso de leitura no topo */
+    .scroll-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--sky-400), var(--gold-400));
+      transform-origin: 0 50%;
+      transform: scaleX(0);
+      z-index: 100;
     }
 
-    button {
-      font: inherit;
-      cursor: pointer;
-      border: none;
-      background: none;
-    }
+    picture { display: contents; }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; cursor: pointer; border: none; background: none; color: inherit; }
 
-    .container {
+    .wrap {
       width: 100%;
-      max-width: 1180px;
+      max-width: 1160px;
       margin: 0 auto;
-      padding: 0 22px;
+      padding: 0 18px;
+      position: relative;
+      z-index: 2;
+    }
+
+    @media (min-width: 768px) {
+      .wrap { padding: 0 32px; }
     }
 
     .serif-italic {
       font-family: var(--font-serif);
       font-style: italic;
       font-weight: 400;
+      letter-spacing: -0.01em;
+      padding-right: 0.04em;
     }
 
-    /* TOP HEADER: FICA SÓ NO TOPO E SOME AO ROLAR */
-    .navbar-wrap {
-      position: absolute;
-      top: 18px;
-      left: 0;
-      right: 0;
-      z-index: 50;
-      padding: 0 18px;
-    }
-
-    .navbar {
-      max-width: 1140px;
-      margin: 0 auto;
-      background: rgba(4, 16, 34, 0.62);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      border: 1px solid rgba(255, 255, 255, 0.14);
-      border-radius: var(--radius-pill);
-      padding: 8px 12px 8px 14px;
-      display: flex;
+    /* BOTÕES (BUTTON-IN-BUTTON ARCHITECTURE) */
+    .btn-primary {
+      display: inline-flex;
       align-items: center;
       justify-content: space-between;
       gap: 12px;
+      background: linear-gradient(135deg, var(--sky-400) 0%, var(--sky-600) 100%);
+      color: #fff;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 0.96rem;
+      padding: 8px 8px 8px 22px;
+      min-height: 52px;
+      border-radius: 999px;
+      box-shadow: 0 16px 36px -8px rgba(14, 165, 233, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+      transition: transform 200ms var(--ease-out), box-shadow 200ms var(--ease-out);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 20px 42px -8px rgba(56, 189, 248, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.45);
+    }
+
+    .btn-primary:active {
+      transform: scale(0.97);
+    }
+
+    .btn-icon-circle {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(3, 13, 30, 0.24);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: transform 220ms var(--ease-out), background-color 220ms var(--ease-out);
+    }
+
+    .btn-primary:hover .btn-icon-circle {
+      transform: translate(2px, -1px) scale(1.06);
+      background: rgba(3, 13, 30, 0.36);
+    }
+
+    .btn-glass {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 13px 22px;
+      min-height: 52px;
+      border-radius: 999px;
+      background: rgba(6, 24, 51, 0.55);
+      border: 1px solid rgba(125, 211, 252, 0.32);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      color: #fff;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 0.94rem;
+      transition: background-color 200ms var(--ease-out), border-color 200ms var(--ease-out), transform 200ms var(--ease-out);
+    }
+
+    .btn-glass:hover {
+      background: rgba(14, 165, 233, 0.24);
+      border-color: var(--sky-300);
+    }
+
+    .btn-glass:active { transform: scale(0.97); }
+
+    /* TOP HEADER: FICA NO TOPO (NÃO ACOMPANHA O SCROLL) */
+    .navbar-wrap {
+      position: absolute;
+      top: max(14px, env(safe-area-inset-top));
+      left: 0;
+      right: 0;
+      z-index: 60;
+      padding: 0 14px;
+    }
+
+    .navbar {
+      max-width: 1120px;
+      margin: 0 auto;
+      background: rgba(3, 13, 30, 0.68);
+      backdrop-filter: blur(16px) saturate(160%);
+      -webkit-backdrop-filter: blur(16px) saturate(160%);
+      border: 1px solid rgba(125, 211, 252, 0.2);
+      box-shadow: 0 16px 36px -12px rgba(3, 13, 30, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.14);
+      border-radius: 999px;
+      padding: 7px 9px 7px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
     }
 
     .brand {
-      display: flex;
+      display: inline-flex;
       align-items: center;
-      gap: 11px;
+      gap: 10px;
       color: #fff;
     }
 
     .brand-logo {
-      width: 42px;
-      height: 42px;
+      width: 40px;
+      height: 40px;
       border-radius: 50%;
       flex-shrink: 0;
-      filter: drop-shadow(0 4px 12px rgba(14, 165, 233, 0.35));
+      filter: drop-shadow(0 4px 10px rgba(56, 189, 248, 0.4));
     }
 
     .brand-text {
       display: flex;
       flex-direction: column;
-      line-height: 1.1;
+      line-height: 1.08;
     }
 
     .brand-name {
       font-family: var(--font-display);
       font-weight: 800;
-      font-size: 0.96rem;
-      letter-spacing: 0.01em;
+      font-size: 0.95rem;
+      letter-spacing: -0.01em;
     }
 
     .brand-sub {
-      font-size: 0.68rem;
-      color: var(--blue-300);
-      font-weight: 600;
+      font-size: 0.66rem;
+      color: var(--sky-300);
+      font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.09em;
       margin-top: 2px;
     }
 
     .nav-links {
       display: none;
       align-items: center;
-      gap: 28px;
-      color: rgba(255, 255, 255, 0.88);
-      font-size: 0.88rem;
-      font-weight: 500;
+      gap: 24px;
+      color: rgba(240, 248, 255, 0.88);
+      font-size: 0.86rem;
+      font-weight: 600;
     }
 
-    .nav-links a:hover {
-      color: var(--blue-300);
+    .nav-links a { transition: color 160ms ease; }
+    .nav-links a:hover { color: var(--sky-300); }
+
+    @media (min-width: 900px) {
+      .nav-links { display: flex; }
     }
 
     .nav-cta {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      background: linear-gradient(135deg, var(--blue-500), var(--blue-600));
+      gap: 7px;
+      background: linear-gradient(135deg, var(--sky-400), var(--sky-600));
       color: #fff;
+      font-family: var(--font-display);
       font-weight: 700;
       font-size: 0.82rem;
       padding: 9px 16px;
-      border-radius: var(--radius-pill);
+      border-radius: 999px;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
       white-space: nowrap;
     }
 
-    @media (min-width: 900px) {
-      .nav-links {
-        display: flex;
-      }
-    }
-
-    /* HERO: IMAGEM LIMPA COM BASTANTE RESPIRO */
+    /* HERO 4K CINEMÁTICO */
     .hero {
       position: relative;
-      min-height: 94svh;
+      min-height: 100svh;
+      min-height: 100dvh;
       display: flex;
       align-items: flex-end;
-      padding: 130px 0 68px;
-      color: var(--text-light);
+      padding: 112px 0 38px;
+      background: var(--abyss);
       overflow: hidden;
-      background: var(--bg-deep);
+    }
+
+    @media (min-width: 900px) {
+      .hero { padding: 140px 0 64px; }
     }
 
     .hero-media {
@@ -332,193 +427,418 @@
       overflow: hidden;
     }
 
-    .hero-media picture,
     .hero-media img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       object-position: center 35%;
-      transform: scale(1.04);
-      will-change: transform;
+      transform: scale(1.1);
+      filter: saturate(1.08) contrast(1.03);
     }
 
-    .hero-overlay {
+    .hero-scrim {
       position: absolute;
       inset: 0;
       z-index: 1;
-      background: linear-gradient(
-        180deg,
-        rgba(4, 16, 34, 0.25) 0%,
-        rgba(4, 16, 34, 0.10) 42%,
-        rgba(4, 16, 34, 0.82) 82%,
-        #041022 100%
-      );
+      background:
+        radial-gradient(800px 400px at 20% 85%, rgba(14, 165, 233, 0.25), transparent 70%),
+        linear-gradient(
+          180deg,
+          rgba(3, 13, 30, 0.36) 0%,
+          rgba(3, 13, 30, 0.08) 34%,
+          rgba(3, 13, 30, 0.72) 72%,
+          var(--abyss) 100%
+        );
     }
 
-    .hero-content {
-      position: relative;
-      z-index: 2;
-      max-width: 740px;
+    /* Ondas luminosas animadas no rodapé do Hero */
+    .hero-glow-wave {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 120px;
+      z-index: 1;
+      pointer-events: none;
+      opacity: 0.45;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      align-items: end;
+    }
+
+    @media (min-width: 960px) {
+      .hero-grid {
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 44px;
+      }
     }
 
     .pill-rating {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      padding: 7px 15px;
-      border-radius: var(--radius-pill);
-      background: rgba(4, 16, 34, 0.68);
-      border: 1px solid rgba(251, 191, 36, 0.45);
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: rgba(6, 24, 51, 0.76);
+      border: 1px solid rgba(251, 191, 36, 0.48);
       backdrop-filter: blur(10px);
-      font-size: 0.8rem;
-      font-weight: 600;
-      color: #fef3c7;
-      margin-bottom: 18px;
+      -webkit-backdrop-filter: blur(10px);
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #FEF3C7;
+      margin-bottom: 14px;
+    }
+
+    .pill-rating .stars {
+      color: var(--gold-400);
+      letter-spacing: 1px;
     }
 
     .hero h1 {
       font-family: var(--font-display);
-      font-size: clamp(2.2rem, 5vw, 4rem);
+      font-size: clamp(2.15rem, 6.2vw, 4.1rem);
       font-weight: 800;
-      line-height: 1.05;
+      line-height: 1.04;
       letter-spacing: -0.03em;
-      margin-bottom: 16px;
+      margin-bottom: 12px;
+      text-wrap: balance;
+      text-shadow: 0 8px 28px rgba(3, 13, 30, 0.55);
     }
 
     .hero h1 .serif-italic {
-      color: var(--blue-300);
-      font-size: 1.08em;
+      color: var(--sky-300);
+      font-size: 1.1em;
     }
 
     .hero-lead {
-      font-size: clamp(1rem, 1.3vw, 1.15rem);
-      color: rgba(240, 247, 255, 0.86);
-      max-width: 48ch;
-      margin-bottom: 28px;
+      font-size: clamp(0.98rem, 2vw, 1.12rem);
+      color: rgba(240, 248, 255, 0.9);
+      max-width: 44ch;
+      margin-bottom: 22px;
     }
 
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    .btn-primary {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
       gap: 10px;
-      background: linear-gradient(135deg, var(--blue-500) 0%, var(--blue-600) 100%);
-      color: #fff;
-      font-family: var(--font-display);
-      font-weight: 700;
-      font-size: 0.98rem;
-      padding: 16px 28px;
-      border-radius: var(--radius-pill);
-      box-shadow: 0 14px 32px rgba(14, 165, 233, 0.36);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 18px 38px rgba(14, 165, 233, 0.5);
+    /* Double-Bezel Card Flutuante no Hero */
+    .hero-shell {
+      padding: 6px;
+      border-radius: 26px;
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(125, 211, 252, 0.24);
     }
 
-    .btn-secondary {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
+    .hero-card {
+      background: linear-gradient(155deg, rgba(9, 32, 66, 0.9) 0%, rgba(4, 16, 34, 0.94) 100%);
+      border-radius: 20px;
+      padding: 18px 20px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16);
+    }
+
+    .hero-metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
       gap: 10px;
-      background: rgba(255, 255, 255, 0.12);
-      color: #fff;
-      border: 1px solid rgba(255, 255, 255, 0.26);
-      backdrop-filter: blur(12px);
+      padding-bottom: 14px;
+      border-bottom: 1px solid rgba(125, 211, 252, 0.16);
+    }
+
+    .h-metric b {
+      display: block;
       font-family: var(--font-display);
+      font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .h-metric b span { color: var(--gold-400); }
+
+    .h-metric small {
+      display: block;
+      font-size: 0.72rem;
+      color: var(--sky-300);
       font-weight: 600;
-      font-size: 0.96rem;
-      padding: 16px 24px;
-      border-radius: var(--radius-pill);
-      transition: background 0.2s ease;
     }
 
-    .btn-secondary:hover {
-      background: rgba(255, 255, 255, 0.2);
+    /* Mini radar animado de rota no Hero */
+    .hero-radar {
+      margin-top: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      font-size: 0.76rem;
+      font-weight: 700;
+      color: var(--sky-100);
     }
 
-    /* ESPAÇAMENTO AMPLO (RESPIRO VISUAL) */
+    .radar-track {
+      flex: 1;
+      height: 2px;
+      background: rgba(125, 211, 252, 0.25);
+      position: relative;
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .radar-pulse {
+      position: absolute;
+      top: 0;
+      left: -30%;
+      width: 35%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, var(--sky-400), var(--gold-400));
+      animation: radarSweep 2.8s infinite ease-in-out;
+    }
+
+    @keyframes radarSweep {
+      0% { left: -35%; }
+      100% { left: 100%; }
+    }
+
+    /* FAIXA MARQUEE NÁUTICA */
+    .marquee {
+      background: linear-gradient(90deg, #061A38 0%, #0B2D5C 50%, #061A38 100%);
+      border-top: 1px solid rgba(125, 211, 252, 0.18);
+      border-bottom: 1px solid rgba(125, 211, 252, 0.18);
+      padding: 13px 0;
+      overflow: hidden;
+      position: relative;
+      z-index: 5;
+    }
+
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: marqueeScroll 32s linear infinite;
+      font-family: var(--font-display);
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--sky-100);
+      letter-spacing: 0.01em;
+    }
+
+    .marquee-track span {
+      display: inline-flex;
+      align-items: center;
+      gap: 24px;
+      padding-right: 24px;
+      white-space: nowrap;
+    }
+
+    .marquee-track span::after {
+      content: "✦";
+      color: var(--gold-400);
+      font-size: 0.75rem;
+    }
+
+    @keyframes marqueeScroll {
+      to { transform: translateX(-50%); }
+    }
+
+    /* ESTRUTURA GERAL DAS SEÇÕES (ZERO FUNDO BRANCO SEM VIDA) */
     .section {
-      padding: 96px 0;
+      position: relative;
+      padding: 68px 0;
+      overflow: hidden;
     }
 
     @media (min-width: 900px) {
-      .section {
-        padding: 120px 0;
-      }
+      .section { padding: 96px 0; }
     }
 
-    .section-dark {
-      background: var(--bg-deep);
+    /* Fundo Azul Lagoa Luminoso (Texturizado, nunca branco chapado) */
+    .theme-lagoon {
+      background:
+        radial-gradient(900px 460px at 10% 12%, rgba(56, 189, 248, 0.35), transparent 65%),
+        radial-gradient(850px 480px at 90% 85%, rgba(2, 132, 199, 0.26), transparent 65%),
+        linear-gradient(180deg, #CFE9FC 0%, #BBE0FA 52%, #CAE6FB 100%);
+      color: var(--ink);
+      border-top: 1px solid rgba(255, 255, 255, 0.55);
+      border-bottom: 1px solid rgba(2, 132, 199, 0.18);
+    }
+
+    /* Linhas topográficas de água sutis no fundo Lagoa */
+    .theme-lagoon::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.35;
+      background-image: radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.6) 0%, transparent 60%),
+        repeating-radial-gradient(circle at 0% 100%, transparent 0, transparent 38px, rgba(2, 132, 199, 0.05) 39px, transparent 40px);
+    }
+
+    /* Fundo Safira Profundo com Orbes de Luz */
+    .theme-sapphire {
+      background:
+        radial-gradient(760px 420px at 85% 15%, rgba(14, 165, 233, 0.22), transparent 65%),
+        radial-gradient(680px 380px at 12% 85%, rgba(245, 158, 11, 0.10), transparent 65%),
+        linear-gradient(180deg, #041226 0%, #071E3D 50%, #041022 100%);
       color: var(--text-light);
     }
 
-    .section-soft {
-      background: var(--bg-soft);
+    .sec-head {
+      max-width: 600px;
+      margin-bottom: 32px;
     }
 
-    .section-header {
-      max-width: 620px;
-      margin-bottom: 52px;
+    @media (min-width: 900px) {
+      .sec-head { margin-bottom: 42px; }
     }
 
-    .eyebrow {
-      display: inline-block;
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
       font-family: var(--font-display);
-      font-size: 0.76rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--blue-600);
-      background: rgba(14, 165, 233, 0.12);
-      padding: 6px 14px;
-      border-radius: var(--radius-pill);
-      margin-bottom: 14px;
-    }
-
-    .section-dark .eyebrow {
-      color: var(--blue-300);
-      background: rgba(56, 189, 248, 0.15);
-    }
-
-    .section-title {
-      font-family: var(--font-display);
-      font-size: clamp(1.85rem, 3.6vw, 2.85rem);
+      font-size: 0.74rem;
       font-weight: 800;
-      line-height: 1.08;
-      letter-spacing: -0.025em;
-      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      padding: 5px 13px;
+      border-radius: 999px;
+      margin-bottom: 10px;
     }
 
-    .section-desc {
-      font-size: 1.02rem;
-      color: var(--text-muted);
+    .theme-lagoon .kicker {
+      background: rgba(6, 23, 46, 0.08);
+      color: var(--sky-600);
+      border: 1px solid rgba(2, 132, 199, 0.22);
     }
 
-    .section-dark .section-desc {
-      color: rgba(240, 247, 255, 0.76);
+    .theme-sapphire .kicker {
+      background: rgba(56, 189, 248, 0.14);
+      color: var(--sky-300);
+      border: 1px solid rgba(125, 211, 252, 0.24);
     }
 
-    /* PARADAS DO ROTEIRO: 1 IMAGEM GRANDE E LIMPA + TEXTO CURTO */
+    .sec-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.75rem, 4.2vw, 2.75rem);
+      font-weight: 800;
+      line-height: 1.06;
+      letter-spacing: -0.028em;
+      text-wrap: balance;
+    }
+
+    .theme-lagoon .sec-title .serif-italic { color: var(--sky-600); }
+    .theme-sapphire .sec-title .serif-italic { color: var(--sky-300); }
+
+    .sec-sub {
+      margin-top: 8px;
+      font-size: 0.96rem;
+      max-width: 46ch;
+    }
+
+    .theme-lagoon .sec-sub { color: var(--ink-soft); }
+    .theme-sapphire .sec-sub { color: var(--text-dim); }
+
+    /* MOTION GRAPHIC: LINHA NÁUTICA INTERATIVA DO ROTEIRO */
+    .route-map-shell {
+      padding: 5px;
+      border-radius: 24px;
+      background: rgba(6, 24, 51, 0.12);
+      border: 1px solid rgba(2, 132, 199, 0.25);
+      margin-bottom: 28px;
+    }
+
+    .route-map-bar {
+      background: linear-gradient(135deg, #061A38 0%, #0A2854 100%);
+      color: #fff;
+      border-radius: 19px;
+      padding: 18px 20px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 18px 40px -16px rgba(4, 16, 34, 0.45);
+    }
+
+    .route-nodes {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      position: relative;
+      z-index: 2;
+    }
+
+    @media (min-width: 768px) {
+      .route-nodes {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+      }
+    }
+
+    .route-node {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(125, 211, 252, 0.18);
+      border-radius: 14px;
+      padding: 10px 12px;
+    }
+
+    .node-dot {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--sky-400), var(--sky-600));
+      color: #fff;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 0.78rem;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+      box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.2);
+    }
+
+    .node-dot.gold {
+      background: linear-gradient(135deg, var(--gold-400), var(--gold-500));
+      color: var(--abyss);
+      box-shadow: 0 0 0 4px rgba(251, 191, 36, 0.24);
+    }
+
+    .route-node div b {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 0.84rem;
+      line-height: 1.15;
+    }
+
+    .route-node div small {
+      font-size: 0.72rem;
+      color: var(--sky-300);
+    }
+
+    /* CARDS DE PARADAS (DOUBLE-BEZEL + SAFIRA PROFUNDO + 1 IMAGEM GRANDE) */
     .stops-stack {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 44px;
+      gap: 24px;
+    }
+
+    .stop-shell {
+      padding: 6px;
+      border-radius: 28px;
+      background: rgba(6, 24, 51, 0.12);
+      border: 1px solid rgba(2, 132, 199, 0.26);
+      box-shadow: 0 22px 50px -20px rgba(6, 24, 51, 0.28);
     }
 
     .stop-card {
-      background: var(--white);
-      border-radius: var(--radius-xl);
-      border: 1px solid var(--border-light);
-      box-shadow: var(--shadow-card);
+      background: linear-gradient(155deg, #071D3B 0%, #041226 100%);
+      color: #fff;
+      border-radius: 22px;
+      border: 1px solid rgba(125, 211, 252, 0.16);
       overflow: hidden;
       display: grid;
       grid-template-columns: 1fr;
@@ -526,13 +846,13 @@
 
     @media (min-width: 900px) {
       .stop-card {
-        grid-template-columns: 1.25fr 0.75fr;
+        grid-template-columns: 1.22fr 0.78fr;
         align-items: center;
       }
-      .stop-card:nth-child(even) {
-        grid-template-columns: 0.75fr 1.25fr;
+      .stop-shell:nth-child(even) .stop-card {
+        grid-template-columns: 0.78fr 1.22fr;
       }
-      .stop-card:nth-child(even) .stop-photo {
+      .stop-shell:nth-child(even) .stop-photo {
         order: 2;
       }
     }
@@ -540,7 +860,7 @@
     .stop-photo {
       position: relative;
       aspect-ratio: 16 / 10;
-      background: var(--bg-dark);
+      background: var(--abyss);
       overflow: hidden;
     }
 
@@ -548,206 +868,236 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: transform 0.6s ease;
+      transition: transform 650ms var(--ease-out);
       cursor: zoom-in;
     }
 
     .stop-card:hover .stop-photo img {
-      transform: scale(1.03);
+      transform: scale(1.04);
     }
 
     .stop-badge {
       position: absolute;
-      top: 16px;
-      left: 16px;
-      background: rgba(4, 16, 34, 0.78);
-      backdrop-filter: blur(8px);
-      color: #fff;
+      top: 14px;
+      left: 14px;
+      background: rgba(3, 13, 30, 0.82);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(125, 211, 252, 0.32);
+      color: var(--sky-300);
       font-family: var(--font-display);
-      font-weight: 700;
-      font-size: 0.76rem;
-      padding: 6px 14px;
-      border-radius: var(--radius-pill);
+      font-weight: 800;
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 6px 13px;
+      border-radius: 999px;
     }
 
     .stop-info {
-      padding: 32px 26px;
+      padding: 24px 22px 26px;
     }
 
     @media (min-width: 900px) {
-      .stop-info {
-        padding: 44px 42px;
-      }
+      .stop-info { padding: 36px 36px; }
+    }
+
+    .stop-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-bottom: 12px;
+    }
+
+    .stop-tags span {
+      font-size: 0.74rem;
+      font-weight: 700;
+      padding: 4px 11px;
+      border-radius: 999px;
+      background: rgba(56, 189, 248, 0.14);
+      border: 1px solid rgba(125, 211, 252, 0.24);
+      color: var(--sky-300);
     }
 
     .stop-title {
       font-family: var(--font-display);
-      font-size: clamp(1.5rem, 2.4vw, 2rem);
+      font-size: clamp(1.45rem, 2.5vw, 1.95rem);
       font-weight: 800;
-      margin-bottom: 10px;
-      line-height: 1.12;
+      line-height: 1.1;
+      margin-bottom: 8px;
+      color: #fff;
     }
 
     .stop-text {
-      color: var(--text-muted);
-      font-size: 0.98rem;
-      margin-bottom: 22px;
-      max-width: 38ch;
+      color: var(--text-dim);
+      font-size: 0.94rem;
+      margin-bottom: 18px;
+      max-width: 36ch;
     }
 
     .stop-btn {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
+      gap: 9px;
       font-family: var(--font-display);
       font-weight: 700;
-      font-size: 0.9rem;
-      color: var(--blue-600);
-      background: rgba(14, 165, 233, 0.10);
-      padding: 11px 18px;
-      border-radius: var(--radius-pill);
-      transition: background 0.2s ease, transform 0.2s ease;
+      font-size: 0.86rem;
+      color: var(--abyss);
+      background: linear-gradient(135deg, var(--sky-300), var(--sky-400));
+      padding: 10px 18px;
+      border-radius: 999px;
+      transition: transform 180ms var(--ease-out), box-shadow 180ms var(--ease-out);
     }
 
     .stop-btn:hover {
-      background: rgba(14, 165, 233, 0.18);
       transform: translateX(3px);
+      box-shadow: 0 10px 24px -6px rgba(56, 189, 248, 0.55);
     }
 
-    /* PLANEJADOR "MONTE SEU PASSEIO" (SEM PREÇOS) */
+    /* MONTE SEU PASSEIO (DOUBLE-BEZEL SIMULADOR SEM PREÇOS) */
+    .planner-shell {
+      padding: 6px;
+      border-radius: 30px;
+      background: linear-gradient(145deg, rgba(56, 189, 248, 0.28), rgba(251, 191, 36, 0.16));
+      border: 1px solid rgba(125, 211, 252, 0.32);
+      box-shadow: 0 28px 65px -20px rgba(0, 0, 0, 0.6);
+    }
+
     .planner-box {
-      background: linear-gradient(160deg, #071b36 0%, #041022 100%);
-      border: 1px solid rgba(125, 211, 252, 0.2);
-      border-radius: var(--radius-xl);
-      padding: 32px 22px;
-      box-shadow: 0 28px 65px -15px rgba(4, 16, 34, 0.35);
+      background: linear-gradient(165deg, #082042 0%, #041124 100%);
+      border-radius: 24px;
+      padding: 26px 18px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     @media (min-width: 860px) {
-      .planner-box {
-        padding: 48px 44px;
-      }
+      .planner-box { padding: 38px 36px; }
     }
 
     .planner-grid {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 32px;
-      margin-top: 32px;
+      gap: 24px;
+      margin-top: 22px;
     }
 
     @media (min-width: 960px) {
       .planner-grid {
-        grid-template-columns: 1.2fr 0.8fr;
-        gap: 40px;
-        align-items: start;
+        grid-template-columns: 1.22fr 0.78fr;
+        gap: 34px;
+        align-items: center;
       }
     }
 
-    .planner-group {
-      margin-bottom: 24px;
-    }
+    .planner-group { margin-bottom: 18px; }
+    .planner-group:last-child { margin-bottom: 0; }
 
     .planner-label {
       display: block;
       font-family: var(--font-display);
       font-weight: 700;
-      font-size: 0.9rem;
-      color: var(--blue-300);
-      margin-bottom: 10px;
+      font-size: 0.84rem;
+      color: var(--sky-300);
+      margin-bottom: 8px;
     }
 
     .pill-selector {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+      gap: 8px;
     }
 
     .choice-btn {
       text-align: left;
-      padding: 13px 15px;
-      border-radius: var(--radius-md);
+      padding: 11px 14px;
+      border-radius: 14px;
       background: rgba(255, 255, 255, 0.05);
-      border: 1.5px solid rgba(255, 255, 255, 0.12);
+      border: 1.5px solid rgba(125, 211, 252, 0.16);
       color: #fff;
-      transition: all 0.2s ease;
+      transition: all 180ms var(--ease-out);
     }
 
     .choice-btn strong {
       display: block;
       font-family: var(--font-display);
-      font-size: 0.9rem;
+      font-size: 0.86rem;
     }
 
     .choice-btn span {
-      font-size: 0.74rem;
-      color: rgba(240, 247, 255, 0.62);
+      font-size: 0.72rem;
+      color: var(--text-dim);
     }
 
     .choice-btn.active {
-      background: rgba(14, 165, 233, 0.22);
-      border-color: var(--blue-400);
+      background: rgba(14, 165, 233, 0.25);
+      border-color: var(--sky-400);
+      box-shadow: inset 0 0 0 1px var(--sky-400);
     }
 
     .stops-check-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 8px;
     }
 
     .stop-check {
       display: flex;
       align-items: center;
-      gap: 10px;
-      padding: 12px 14px;
-      border-radius: var(--radius-md);
+      gap: 9px;
+      padding: 11px 13px;
+      border-radius: 14px;
       background: rgba(255, 255, 255, 0.05);
-      border: 1.5px solid rgba(255, 255, 255, 0.12);
+      border: 1.5px solid rgba(125, 211, 252, 0.16);
       color: #fff;
-      font-size: 0.86rem;
-      font-weight: 600;
+      font-size: 0.84rem;
+      font-weight: 700;
+      transition: all 180ms var(--ease-out);
     }
 
     .stop-check.active {
-      background: rgba(14, 165, 233, 0.22);
-      border-color: var(--blue-400);
+      background: rgba(14, 165, 233, 0.25);
+      border-color: var(--sky-400);
     }
 
     .check-box {
-      width: 20px;
-      height: 20px;
+      width: 19px;
+      height: 19px;
       border-radius: 6px;
-      border: 1.5px solid rgba(255, 255, 255, 0.4);
+      border: 1.5px solid rgba(125, 211, 252, 0.45);
       display: grid;
       place-items: center;
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       flex-shrink: 0;
     }
 
     .stop-check.active .check-box {
-      background: var(--blue-500);
-      border-color: var(--blue-500);
+      background: var(--sky-400);
+      border-color: var(--sky-400);
+      color: var(--abyss);
+      font-weight: 900;
     }
 
     .steppers-row {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
-      gap: 10px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+
+    @media (max-width: 480px) {
+      .steppers-row { grid-template-columns: 1fr; }
     }
 
     .stepper-card {
       background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      border-radius: var(--radius-md);
-      padding: 12px 14px;
+      border: 1px solid rgba(125, 211, 252, 0.16);
+      border-radius: 14px;
+      padding: 10px 12px;
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
 
     .stepper-info strong {
-      display: block;
-      font-size: 0.88rem;
+      font-size: 0.84rem;
       color: #fff;
     }
 
@@ -760,327 +1110,531 @@
     .step-btn {
       width: 30px;
       height: 30px;
-      border-radius: 8px;
-      background: rgba(255, 255, 255, 0.12);
+      border-radius: 50%;
+      background: rgba(56, 189, 248, 0.18);
       color: #fff;
-      font-weight: 700;
+      font-weight: 800;
       display: grid;
       place-items: center;
+      transition: background-color 150ms ease, transform 150ms ease;
     }
 
-    .step-btn:hover {
-      background: var(--blue-500);
-    }
+    .step-btn:hover { background: var(--sky-500); }
+    .step-btn:active { transform: scale(0.9); }
 
     .step-val {
       min-width: 18px;
       text-align: center;
       font-family: var(--font-display);
-      font-weight: 700;
+      font-weight: 800;
+      font-size: 0.95rem;
       color: #fff;
     }
 
     .input-field {
       width: 100%;
-      padding: 13px 14px;
-      border-radius: var(--radius-md);
+      padding: 11px 14px;
+      border-radius: 14px;
       background: rgba(255, 255, 255, 0.07);
-      border: 1px solid rgba(255, 255, 255, 0.16);
+      border: 1px solid rgba(125, 211, 252, 0.22);
       color: #fff;
       font: inherit;
-      font-size: 0.9rem;
+      font-size: 0.88rem;
     }
 
     .planner-summary {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1.5px solid rgba(125, 211, 252, 0.28);
-      border-radius: var(--radius-lg);
-      padding: 24px 20px;
+      background: linear-gradient(160deg, rgba(14, 165, 233, 0.16), rgba(3, 13, 30, 0.75));
+      border: 1.5px solid rgba(125, 211, 252, 0.32);
+      border-radius: 20px;
+      padding: 22px 18px;
     }
 
     .summary-preview {
-      background: rgba(4, 16, 34, 0.65);
-      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(3, 13, 30, 0.78);
+      border: 1px solid rgba(125, 211, 252, 0.2);
       border-radius: 14px;
-      padding: 15px;
-      font-size: 0.88rem;
-      color: #f0f9ff;
-      line-height: 1.55;
-      margin: 14px 0 18px;
+      padding: 14px;
+      font-size: 0.86rem;
+      color: var(--sky-100);
+      line-height: 1.5;
+      margin: 10px 0 16px;
     }
 
-    .btn-wa-full {
-      width: 100%;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      background: linear-gradient(135deg, var(--blue-500) 0%, var(--blue-600) 100%);
-      color: #fff;
-      font-family: var(--font-display);
-      font-weight: 800;
-      font-size: 0.98rem;
-      padding: 16px 22px;
-      border-radius: var(--radius-pill);
-      box-shadow: 0 14px 30px rgba(2, 132, 199, 0.36);
-    }
-
-    /* A PILOTO KELLI ROQUE (LIMPO E DIRETO) */
-    .pilot-card {
-      background: linear-gradient(135deg, #071b36 0%, #0b2e59 100%);
-      color: #fff;
-      border-radius: var(--radius-xl);
-      overflow: hidden;
+    /* BENTO A LANCHA & A PILOTO KELLI (EM FUNDO AZUL LAGOA VIVO) */
+    .bento-pilot-grid {
       display: grid;
       grid-template-columns: 1fr;
-      box-shadow: var(--shadow-card);
+      gap: 20px;
     }
 
     @media (min-width: 900px) {
-      .pilot-card {
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
+      .bento-pilot-grid {
+        grid-template-columns: 1.08fr 0.92fr;
+        gap: 28px;
+        align-items: stretch;
       }
     }
 
-    .pilot-photo {
-      aspect-ratio: 4 / 3;
-      overflow: hidden;
-    }
-
-    .pilot-photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .pilot-body {
-      padding: 36px 26px;
-    }
-
-    @media (min-width: 900px) {
-      .pilot-body {
-        padding: 52px 48px;
-      }
-    }
-
-    .pilot-badges {
+    .pilot-photos-shell {
+      padding: 6px;
+      border-radius: 28px;
+      background: rgba(6, 24, 51, 0.12);
+      border: 1px solid rgba(2, 132, 199, 0.26);
       display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin: 22px 0 28px;
     }
 
-    .pilot-pill {
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.14);
-      padding: 8px 14px;
-      border-radius: var(--radius-pill);
-      font-size: 0.82rem;
-      font-weight: 600;
-      color: var(--blue-300);
-    }
-
-    /* GALERIA ESPAÇADA */
-    .gallery-grid {
+    .pilot-photos-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
-    }
-
-    @media (min-width: 860px) {
-      .gallery-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 22px;
-      }
-    }
-
-    .gallery-item {
-      position: relative;
-      border-radius: var(--radius-lg);
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 10px;
+      width: 100%;
+      border-radius: 22px;
       overflow: hidden;
-      aspect-ratio: 4 / 3;
-      background: var(--bg-dark);
-      cursor: zoom-in;
-      box-shadow: var(--shadow-card);
     }
 
-    .gallery-item img {
+    .pilot-photos-grid figure {
+      position: relative;
+      overflow: hidden;
+      min-height: 250px;
+      background: var(--deep);
+    }
+
+    .pilot-photos-grid img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: transform 0.5s ease;
+      cursor: zoom-in;
+      transition: transform 500ms var(--ease-out);
     }
 
-    .gallery-item:hover img {
-      transform: scale(1.05);
+    .pilot-photos-grid figure:hover img {
+      transform: scale(1.04);
     }
 
-    .gallery-cap {
-      position: absolute;
-      inset: auto 0 0 0;
-      padding: 22px 14px 12px;
-      background: linear-gradient(180deg, transparent, rgba(4, 16, 34, 0.85));
+    .pilot-perks-shell {
+      padding: 6px;
+      border-radius: 28px;
+      background: rgba(6, 24, 51, 0.12);
+      border: 1px solid rgba(2, 132, 199, 0.26);
+      display: flex;
+    }
+
+    .pilot-perks-card {
+      background: linear-gradient(155deg, #071D3B 0%, #041226 100%);
       color: #fff;
-      font-size: 0.8rem;
-      font-weight: 600;
-    }
-
-    /* AVALIAÇÕES CURTAS */
-    .reviews-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 22px;
-    }
-
-    @media (min-width: 860px) {
-      .reviews-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-
-    .review-card {
-      background: var(--white);
-      border-radius: var(--radius-lg);
-      padding: 28px 24px;
-      border: 1px solid var(--border-light);
-      box-shadow: var(--shadow-card);
+      border-radius: 22px;
+      padding: 26px 22px;
+      width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       gap: 16px;
     }
 
-    .stars {
-      color: var(--amber-400);
-      font-size: 1rem;
-      letter-spacing: 2px;
-      margin-bottom: 8px;
+    @media (min-width: 768px) {
+      .pilot-perks-card { padding: 32px 30px; }
     }
 
-    /* MAPA DE EMBARQUE */
+    .perks-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+
+    @media (min-width: 540px) {
+      .perks-list { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    .perks-list li {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 12px 14px;
+      border-radius: 15px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(125, 211, 252, 0.16);
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--sky-100);
+    }
+
+    .perk-ico {
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--sky-400), var(--sky-600));
+      color: #fff;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+      font-size: 1rem;
+    }
+
+    /* GALERIA DE FOTOS (CARROSSEL NO MOBILE + BENTO NO DESKTOP) */
+    .gal-track {
+      display: flex;
+      gap: 12px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      margin: 0 -18px;
+      padding: 0 18px 8px;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .gal-track::-webkit-scrollbar { display: none; }
+
+    .gal-item {
+      position: relative;
+      flex: 0 0 78%;
+      aspect-ratio: 4 / 5;
+      border-radius: 22px;
+      overflow: hidden;
+      scroll-snap-align: center;
+      background: var(--deep);
+      border: 1px solid rgba(125, 211, 252, 0.22);
+      cursor: zoom-in;
+      box-shadow: 0 18px 40px -16px rgba(0, 0, 0, 0.55);
+    }
+
+    .gal-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 600ms var(--ease-out);
+    }
+
+    .gal-item:hover img { transform: scale(1.05); }
+
+    .gal-cap {
+      position: absolute;
+      inset: auto 0 0 0;
+      padding: 28px 14px 12px;
+      background: linear-gradient(180deg, transparent, rgba(3, 13, 30, 0.88));
+      color: #fff;
+      font-family: var(--font-display);
+      font-size: 0.82rem;
+      font-weight: 700;
+    }
+
+    @media (min-width: 900px) {
+      .gal-track {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 230px;
+        grid-auto-flow: dense;
+        gap: 16px;
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+      }
+      .gal-item { aspect-ratio: auto; }
+      .gal-item.tall { grid-row: span 2; }
+      .gal-item.wide { grid-column: span 2; }
+    }
+
+    /* AVALIAÇÕES COMPACTAS E INTEGRADAS (EM FUNDO AZUL LAGOA, ZERO BRANCO SOLTO) */
+    .reviews-bar {
+      background: linear-gradient(135deg, #061A38 0%, #0A2B59 100%);
+      color: #fff;
+      border-radius: 22px;
+      padding: 18px 22px;
+      border: 1px solid rgba(125, 211, 252, 0.25);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+      box-shadow: 0 18px 40px -18px rgba(4, 16, 34, 0.4);
+    }
+
+    .rev-score {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .rev-score strong {
+      font-family: var(--font-display);
+      font-size: 2.2rem;
+      font-weight: 800;
+      line-height: 1;
+      color: var(--gold-400);
+    }
+
+    .rev-score div span {
+      color: var(--gold-400);
+      letter-spacing: 2px;
+      font-size: 0.9rem;
+      display: block;
+    }
+
+    .rev-score div small {
+      color: var(--sky-100);
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    .rev-grid {
+      display: flex;
+      gap: 12px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      margin: 0 -18px;
+      padding: 0 18px 6px;
+      scrollbar-width: none;
+    }
+
+    .rev-grid::-webkit-scrollbar { display: none; }
+
+    @media (min-width: 900px) {
+      .rev-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+      }
+    }
+
+    .rev-card {
+      flex: 0 0 84%;
+      scroll-snap-align: center;
+      background: linear-gradient(155deg, #071D3B 0%, #05142B 100%);
+      color: #fff;
+      border: 1px solid rgba(125, 211, 252, 0.22);
+      border-radius: 20px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 12px;
+      box-shadow: 0 16px 34px -16px rgba(4, 16, 34, 0.35);
+    }
+
+    .rev-stars {
+      color: var(--gold-400);
+      font-size: 0.9rem;
+      letter-spacing: 2px;
+      margin-bottom: 6px;
+    }
+
+    .rev-card p {
+      font-size: 0.9rem;
+      color: var(--sky-100);
+      line-height: 1.5;
+    }
+
+    .rev-card cite {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 0.8rem;
+      color: var(--sky-300);
+    }
+
+    /* EMBARQUE + DÚVIDAS RÁPIDAS (EM SAFIRA PROFUNDO, ZERO FINAL BRANCO) */
+    .where-faq-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+
+    .map-shell {
+      padding: 6px;
+      border-radius: 28px;
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(125, 211, 252, 0.24);
+    }
+
     .map-card {
-      background: var(--white);
-      border-radius: var(--radius-xl);
-      border: 1px solid var(--border-light);
-      box-shadow: var(--shadow-card);
+      background: linear-gradient(160deg, #082042 0%, #041124 100%);
+      border-radius: 22px;
       overflow: hidden;
       display: grid;
       grid-template-columns: 1fr;
+      border: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     @media (min-width: 900px) {
-      .map-card {
-        grid-template-columns: 0.9fr 1.1fr;
-      }
+      .map-card { grid-template-columns: 0.95fr 1.05fr; }
     }
 
     .map-info {
-      padding: 36px 26px;
+      padding: 26px 22px;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      gap: 14px;
     }
 
     @media (min-width: 900px) {
-      .map-info {
-        padding: 46px 42px;
-      }
+      .map-info { padding: 34px 34px; }
     }
 
+    .info-pills {
+      list-style: none;
+      display: grid;
+      gap: 8px;
+    }
+
+    .info-pills li {
+      padding: 11px 14px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(125, 211, 252, 0.16);
+      font-size: 0.86rem;
+    }
+
+    .info-pills small {
+      display: block;
+      font-size: 0.68rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--sky-300);
+    }
+
+    .info-pills b { color: #fff; }
+
     .map-frame {
-      min-height: 330px;
+      min-height: 290px;
       width: 100%;
       height: 100%;
       border: 0;
     }
 
-    /* FAQ ENXUTO */
-    .faq-list {
-      max-width: 780px;
-      margin: 0 auto;
+    /* FAQ 2x2 COMPACTO EM VIDRO SAFIRA */
+    .faq-grid {
       display: grid;
-      gap: 12px;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+
+    @media (min-width: 768px) {
+      .faq-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
     }
 
     details.faq-item {
-      background: var(--white);
-      border: 1px solid var(--border-light);
-      border-radius: var(--radius-md);
-      padding: 18px 22px;
-      box-shadow: var(--shadow-card);
+      background: rgba(8, 32, 66, 0.78);
+      border: 1px solid rgba(125, 211, 252, 0.2);
+      border-radius: 16px;
+      padding: 15px 18px;
     }
 
     details.faq-item summary {
       font-family: var(--font-display);
       font-weight: 700;
-      font-size: 1rem;
+      font-size: 0.92rem;
+      color: #fff;
       cursor: pointer;
       list-style: none;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 10px;
     }
 
-    details.faq-item summary::-webkit-details-marker {
-      display: none;
+    details.faq-item summary::-webkit-details-marker { display: none; }
+
+    details.faq-item summary::after {
+      content: "+";
+      color: var(--sky-300);
+      font-size: 1.2rem;
+      transition: transform 200ms var(--ease-out);
+    }
+
+    details.faq-item[open] summary::after {
+      transform: rotate(45deg);
     }
 
     details.faq-item p {
-      margin-top: 10px;
-      color: var(--text-muted);
-      font-size: 0.92rem;
+      margin-top: 8px;
+      color: var(--text-dim);
+      font-size: 0.85rem;
+      line-height: 1.5;
     }
 
-    /* FOOTER */
-    .final-cta {
-      background: linear-gradient(145deg, #071b36 0%, #030c1a 100%);
+    /* BANNER FINAL CINEMÁTICO COM FOTO DE FUNDO */
+    .final-banner {
+      position: relative;
+      padding: 84px 0;
+      text-align: center;
       color: #fff;
-      padding: 88px 0 110px;
+      overflow: hidden;
+      background: var(--abyss);
+    }
+
+    .final-banner > picture img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.42;
+      filter: saturate(1.15);
+    }
+
+    .final-banner::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background:
+        radial-gradient(600px 300px at 50% 50%, rgba(14, 165, 233, 0.28), transparent 70%),
+        linear-gradient(180deg, var(--abyss) 0%, rgba(3, 13, 30, 0.65) 50%, var(--abyss) 100%);
+    }
+
+    .site-footer {
+      background: var(--abyss);
+      border-top: 1px solid rgba(125, 211, 252, 0.14);
+      padding: 26px 0 96px;
+      font-size: 0.8rem;
+      color: var(--text-dim);
+    }
+
+    @media (min-width: 900px) {
+      .site-footer { padding-bottom: 32px; }
+    }
+
+    .footer-row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
       text-align: center;
     }
 
-    .footer-meta {
-      margin-top: 56px;
-      padding-top: 26px;
-      border-top: 1px solid rgba(255, 255, 255, 0.12);
-      font-size: 0.82rem;
-      color: rgba(240, 247, 255, 0.65);
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      align-items: center;
-      justify-content: space-between;
-    }
-
     @media (min-width: 768px) {
-      .footer-meta {
-        flex-direction: row;
-      }
+      .footer-row { flex-direction: row; text-align: left; }
     }
 
     /* DOCK MOBILE INFERIOR */
     .dock {
       position: fixed;
-      bottom: 14px;
-      left: 14px;
-      right: 14px;
+      bottom: max(12px, env(safe-area-inset-bottom));
+      left: 12px;
+      right: 12px;
       z-index: 80;
-      background: rgba(4, 16, 34, 0.92);
+      background: rgba(3, 13, 30, 0.92);
       backdrop-filter: blur(16px);
-      border: 1px solid rgba(125, 211, 252, 0.28);
-      border-radius: var(--radius-pill);
-      padding: 8px 10px 8px 18px;
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(125, 211, 252, 0.3);
+      border-radius: 999px;
+      padding: 7px 8px 7px 14px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 10px;
-      box-shadow: 0 16px 38px rgba(0, 0, 0, 0.4);
-      transition: transform 0.3s ease, opacity 0.3s ease;
+      box-shadow: 0 16px 38px rgba(0, 0, 0, 0.55);
+      transition: transform 300ms var(--ease-out), opacity 300ms var(--ease-out);
     }
 
     .dock.hidden {
-      transform: translateY(130%);
+      transform: translateY(140%);
       opacity: 0;
       pointer-events: none;
     }
@@ -1089,30 +1643,29 @@
       display: block;
       color: #fff;
       font-family: var(--font-display);
-      font-size: 0.84rem;
+      font-size: 0.82rem;
     }
 
     .dock-text span {
       display: block;
-      color: var(--blue-300);
-      font-size: 0.72rem;
+      color: var(--sky-300);
+      font-size: 0.7rem;
+      font-weight: 600;
     }
 
     .dock-btn {
-      background: linear-gradient(135deg, var(--blue-500), var(--blue-600));
+      background: linear-gradient(135deg, var(--sky-400), var(--sky-600));
       color: #fff;
       font-family: var(--font-display);
-      font-weight: 700;
-      font-size: 0.82rem;
+      font-weight: 800;
+      font-size: 0.8rem;
       padding: 10px 16px;
-      border-radius: var(--radius-pill);
+      border-radius: 999px;
       white-space: nowrap;
     }
 
     @media (min-width: 900px) {
-      .dock {
-        display: none;
-      }
+      .dock { display: none; }
     }
 
     /* LIGHTBOX */
@@ -1120,7 +1673,7 @@
       position: fixed;
       inset: 0;
       z-index: 200;
-      background: rgba(3, 10, 22, 0.92);
+      background: rgba(3, 10, 22, 0.94);
       backdrop-filter: blur(12px);
       display: none;
       align-items: center;
@@ -1128,24 +1681,23 @@
       padding: 20px;
     }
 
-    .lightbox.open {
-      display: flex;
-    }
+    .lightbox.open { display: flex; }
 
     .lightbox img {
       max-width: min(1100px, 94vw);
       max-height: 86vh;
       border-radius: 16px;
+      border: 1px solid rgba(125, 211, 252, 0.25);
     }
 
     .lightbox-close {
       position: absolute;
-      top: 20px;
-      right: 20px;
+      top: 18px;
+      right: 18px;
       width: 44px;
       height: 44px;
       border-radius: 50%;
-      background: rgba(255, 255, 255, 0.16);
+      background: rgba(255, 255, 255, 0.14);
       color: #fff;
       font-size: 1.4rem;
       display: grid;
@@ -1155,434 +1707,557 @@
 </head>
 <body>
 
-  <!-- TOP HEADER (FICA SÓ NO TOPO, NÃO DESCE JUNTO NA TELA) -->
+  <!-- Barra de progresso no topo -->
+  <div class="scroll-bar" id="scrollBar" aria-hidden="true"></div>
+
+  <!-- TOP HEADER (FICA SÓ NO TOPO) -->
   <div class="navbar-wrap">
     <header class="navbar">
       <a href="#topo" class="brand" aria-label="Passeios de lancha Kelli Roque">
-        <img src="img/logo-kelli.svg" alt="Logo Kelli Roque Passeios Náuticos" class="brand-logo" width="42" height="42">
+        <img src="img/logo-kelli.svg" alt="Logo Kelli Roque Passeios Náuticos" class="brand-logo" width="40" height="40">
         <div class="brand-text">
           <span class="brand-name">KELLI ROQUE</span>
-          <span class="brand-sub">Passeios Náuticos</span>
+          <span class="brand-sub">Capitólio · MG</span>
         </div>
       </a>
       <nav class="nav-links" aria-label="Navegação principal">
         <a href="#roteiro">Paradas</a>
         <a href="#planejador">Monte seu Passeio</a>
-        <a href="#piloto">A Piloto Kelli</a>
+        <a href="#piloto">A Lancha</a>
         <a href="#galeria">Fotos</a>
         <a href="#embarque">Embarque</a>
       </nav>
-      <a href="#planejador" class="nav-cta">
-        <span>Agendar Passeio</span>
-      </a>
+      <a href="#planejador" class="nav-cta">Falar com Kelli</a>
     </header>
   </div>
 
-  <!-- HERO 4K LIMPO E VISUAL -->
+  <!-- HERO 4K COM MOTION PARALLAX E CARD NÁUTICO -->
   <section class="hero" id="topo">
     <div class="hero-media">
       <picture>
         <source media="(max-width: 768px)" srcset="img/hero-capitolio-mobile.webp" type="image/webp">
         <source media="(min-width: 769px)" srcset="img/hero-capitolio-4k.webp" type="image/webp">
-        <img src="img/hero-capitolio-4k.jpg" alt="Vista panorâmica dos Cânions de Capitólio no Lago de Furnas — Passeios de lancha Kelli Roque" width="3840" height="2160" fetchpriority="high" decoding="async" id="heroImg">
+        <img src="img/hero-capitolio-4k.jpg" alt="Cânions de Capitólio no Lago de Furnas — Passeios de lancha Kelli Roque" width="3840" height="2160" fetchpriority="high" decoding="async" id="heroImg">
       </picture>
     </div>
-    <div class="hero-overlay"></div>
+    <div class="hero-scrim"></div>
 
-    <div class="container">
-      <div class="hero-content">
-        <a href="#avaliacoes" class="pill-rating">★ 5,0 no Google · 174 avaliações reais</a>
+    <!-- Ondas sutis animadas -->
+    <svg class="hero-glow-wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,64 C320,110 640,20 960,64 C1200,96 1340,48 1440,64 L1440,120 L0,120 Z" fill="rgba(14,165,233,0.14)"></path>
+    </svg>
 
-        <h1>
-          Viva os <span class="serif-italic">Cânions de Capitólio</span>, a Lagoa Azul e o Vale dos Tucanos.
-        </h1>
-
-        <p class="hero-lead">
-          Passeios de lancha privativos e compartilhados no Lago de Furnas com a piloto <strong>Kelli Roque</strong>.
-        </p>
-
-        <div class="hero-actions">
-          <a href="#planejador" class="btn-primary">
-            <span>Montar Meu Passeio</span>
-            <span>→</span>
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <a href="#avaliacoes" class="pill-rating hero-in">
+            <span class="stars">★★★★★</span>
+            <span>5,0 no Google · 174 avaliações</span>
           </a>
-          <a href="https://wa.me/5535998235432?text=Ol%C3%A1%2C%20Kelli!%20Vim%20pelo%20site%20e%20quero%20saber%20sobre%20o%20passeio%20de%20lancha%20em%20Capit%C3%B3lio." target="_blank" rel="noopener" class="btn-secondary">
-            <span>Falar com Kelli</span>
-          </a>
+
+          <h1 class="hero-in">
+            Os Cânions de Capitólio <span class="serif-italic">vistos de dentro.</span>
+          </h1>
+
+          <p class="hero-lead hero-in">
+            Lancha privativa ou compartilhada pela Lagoa Azul e Vale dos Tucanos com a piloto <strong>Kelli Roque</strong>.
+          </p>
+
+          <div class="hero-actions hero-in">
+            <a href="#planejador" class="btn-primary">
+              <span>Montar meu passeio</span>
+              <span class="btn-icon-circle">→</span>
+            </a>
+            <a href="https://wa.me/5535998235432?text=Ol%C3%A1%2C%20Kelli!%20Vim%20pelo%20site%20e%20quero%20saber%20sobre%20o%20passeio%20de%20lancha%20em%20Capit%C3%B3lio." target="_blank" rel="noopener" class="btn-glass">
+              <span>Falar com Kelli</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card Náutico Double-Bezel -->
+        <div class="hero-shell hero-in">
+          <div class="hero-card">
+            <div class="hero-metrics">
+              <div class="h-metric">
+                <b>5,0 <span>★</span></b>
+                <small>174 avaliações</small>
+              </div>
+              <div class="h-metric">
+                <b>3 Paradas</b>
+                <small>Cânions · Lagoa · Vale</small>
+              </div>
+              <div class="h-metric">
+                <b>KM 306</b>
+                <small>Ponte Rio Turvo</small>
+              </div>
+            </div>
+            <div class="hero-radar">
+              <span>⚓ Rio Turvo</span>
+              <div class="radar-track"><div class="radar-pulse"></div></div>
+              <span>🚤 Cânions &amp; Lagoa</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PARADAS DO ROTEIRO: ESPAÇO VISUAL + 1 FOTO NÍTIDA POR PARADA + TEXTO RESUMIDO -->
-  <section class="section" id="roteiro">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="eyebrow">Roteiro pelo Lago de Furnas</span>
-        <h2 class="section-title">As paradas mais bonitas de <span class="serif-italic">Capitólio</span></h2>
-        <p class="section-desc">
-          Saída oficial da Ponte do Rio Turvo (MG-050, KM 306) com paradas tranquilas para mergulho e fotos.
-        </p>
+  <!-- FAIXA MARQUEE EM MOVIMENTO -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Cânions de Capitólio</span><span>Lagoa Azul</span><span>Vale dos Tucanos</span><span>Ponte do Rio Turvo · KM 306</span><span>Lancha Privativa ou Grupo</span><span>Som Bluetooth &amp; Cooler</span><span>Pet Friendly</span>
+      <span>Cânions de Capitólio</span><span>Lagoa Azul</span><span>Vale dos Tucanos</span><span>Ponte do Rio Turvo · KM 306</span><span>Lancha Privativa ou Grupo</span><span>Som Bluetooth &amp; Cooler</span><span>Pet Friendly</span>
+    </div>
+  </div>
+
+  <!-- PARADAS DO ROTEIRO (FUNDO AZUL LAGOA TEXTURIZADO + CARDS SAFIRA DOUBLE-BEZEL) -->
+  <section class="section theme-lagoon" id="roteiro">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="kicker">Roteiro pelo Lago de Furnas</span>
+        <h2 class="sec-title">3 paradas inesquecíveis em <span class="serif-italic">Capitólio.</span></h2>
+        <p class="sec-sub">Saída oficial da Ponte do Rio Turvo com tempo tranquilo para banho e fotos.</p>
+      </div>
+
+      <!-- Barra Náutica de Trajeto -->
+      <div class="route-map-shell reveal">
+        <div class="route-map-bar">
+          <div class="route-nodes">
+            <div class="route-node">
+              <span class="node-dot gold">⚓</span>
+              <div><b>Embarque</b><small>Ponte do Rio Turvo</small></div>
+            </div>
+            <div class="route-node">
+              <span class="node-dot">01</span>
+              <div><b>Cânions</b><small>Paredões e cachoeiras</small></div>
+            </div>
+            <div class="route-node">
+              <span class="node-dot">02</span>
+              <div><b>Lagoa Azul</b><small>Piscina e bar flutuante</small></div>
+            </div>
+            <div class="route-node">
+              <span class="node-dot">03</span>
+              <div><b>Vale dos Tucanos</b><small>Águas super calmas</small></div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="stops-stack">
         <!-- 1. CÂNIONS DE CAPITÓLIO -->
-        <article class="stop-card reveal">
-          <div class="stop-photo">
-            <span class="stop-badge">Parada 01</span>
-            <picture>
-              <source srcset="img/canions-principal.webp" type="image/webp">
-              <img src="img/canions-principal.jpg" alt="Cachoeira e paredões dos Cânions de Capitólio com lancha" loading="lazy" data-lightbox>
-            </picture>
-          </div>
-          <div class="stop-info">
-            <h3 class="stop-title">Cânions de Capitólio</h3>
-            <p class="stop-text">
-              Navegação entre paredões gigantes de mais de 20 metros, quedas d'água cristalinas e parada para banho com coletes e flutuadores.
-            </p>
-            <button type="button" class="stop-btn" onclick="selectStopInPlanner('Cânions de Capitólio')">
-              <span>Incluir no passeio</span>
-              <span>→</span>
-            </button>
-          </div>
-        </article>
+        <div class="stop-shell reveal">
+          <article class="stop-card">
+            <div class="stop-photo">
+              <span class="stop-badge">Parada 01</span>
+              <picture>
+                <source srcset="img/canions-principal.webp" type="image/webp">
+                <img src="img/canions-principal.jpg" alt="Cachoeira e paredões dos Cânions de Capitólio com lancha" loading="lazy" data-lightbox>
+              </picture>
+            </div>
+            <div class="stop-info">
+              <div class="stop-tags">
+                <span>🪨 Paredões de 20m</span>
+                <span>🏊 Parada p/ banho</span>
+              </div>
+              <h3 class="stop-title">Cânions de Capitólio</h3>
+              <p class="stop-text">
+                Paredões gigantes, quedas d'água cristalinas e parada para mergulho com coletes e flutuadores.
+              </p>
+              <button type="button" class="stop-btn" onclick="selectStopInPlanner('Cânions de Capitólio')">
+                <span>Incluir no passeio</span>
+                <span>→</span>
+              </button>
+            </div>
+          </article>
+        </div>
 
         <!-- 2. LAGOA AZUL -->
-        <article class="stop-card reveal">
-          <div class="stop-photo">
-            <span class="stop-badge">Parada 02</span>
-            <picture>
-              <source srcset="img/lagoa-azul-2.webp" type="image/webp">
-              <img src="img/lagoa-azul-2.jpg" alt="Vista aérea da Lagoa Azul e bar flutuante em Capitólio MG" loading="lazy" data-lightbox>
-            </picture>
-          </div>
-          <div class="stop-info">
-            <h3 class="stop-title">Lagoa Azul</h3>
-            <p class="stop-text">
-              Águas translúcidas com cachoeira, piscina natural e estrutura de bar flutuante para drinks, porções e fotos.
-            </p>
-            <button type="button" class="stop-btn" onclick="selectStopInPlanner('Lagoa Azul')">
-              <span>Incluir no passeio</span>
-              <span>→</span>
-            </button>
-          </div>
-        </article>
+        <div class="stop-shell reveal">
+          <article class="stop-card">
+            <div class="stop-photo">
+              <span class="stop-badge">Parada 02</span>
+              <picture>
+                <source srcset="img/lagoa-azul-2.webp" type="image/webp">
+                <img src="img/lagoa-azul-2.jpg" alt="Vista aérea da Lagoa Azul e bar flutuante em Capitólio MG" loading="lazy" data-lightbox>
+              </picture>
+            </div>
+            <div class="stop-info">
+              <div class="stop-tags">
+                <span>🍹 Bar flutuante</span>
+                <span>💦 Cachoeira</span>
+              </div>
+              <h3 class="stop-title">Lagoa Azul</h3>
+              <p class="stop-text">
+                Água translúcida com cachoeira, piscina natural e bar flutuante para drinks, porções e fotos.
+              </p>
+              <button type="button" class="stop-btn" onclick="selectStopInPlanner('Lagoa Azul')">
+                <span>Incluir no passeio</span>
+                <span>→</span>
+              </button>
+            </div>
+          </article>
+        </div>
 
         <!-- 3. VALE DOS TUCANOS -->
-        <article class="stop-card reveal">
-          <div class="stop-photo">
-            <span class="stop-badge">Parada 03</span>
-            <picture>
-              <source srcset="img/vale-dos-tucanos.webp" type="image/webp">
-              <img src="img/vale-dos-tucanos.jpg" alt="Lanchas nos paredões do Vale dos Tucanos em Capitólio" loading="lazy" data-lightbox>
-            </picture>
-          </div>
-          <div class="stop-info">
-            <h3 class="stop-title">Vale dos Tucanos</h3>
-            <p class="stop-text">
-              Enseada preservada de águas super calmas e sem correnteza, perfeita para nadar com crianças e relaxar em família.
-            </p>
-            <button type="button" class="stop-btn" onclick="selectStopInPlanner('Vale dos Tucanos')">
-              <span>Incluir no passeio</span>
-              <span>→</span>
-            </button>
-          </div>
-        </article>
+        <div class="stop-shell reveal">
+          <article class="stop-card">
+            <div class="stop-photo">
+              <span class="stop-badge">Parada 03</span>
+              <picture>
+                <source srcset="img/vale-dos-tucanos.webp" type="image/webp">
+                <img src="img/vale-dos-tucanos.jpg" alt="Lanchas nos paredões do Vale dos Tucanos em Capitólio" loading="lazy" data-lightbox>
+              </picture>
+            </div>
+            <div class="stop-info">
+              <div class="stop-tags">
+                <span>🌊 Sem correnteza</span>
+                <span>👨‍👩‍👧 Ideal p/ família</span>
+              </div>
+              <h3 class="stop-title">Vale dos Tucanos</h3>
+              <p class="stop-text">
+                Enseada abrigada de águas super calmas, perfeita para nadar com crianças e relaxar em família.
+              </p>
+              <button type="button" class="stop-btn" onclick="selectStopInPlanner('Vale dos Tucanos')">
+                <span>Incluir no passeio</span>
+                <span>→</span>
+              </button>
+            </div>
+          </article>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- MONTE SEU PASSEIO (SEM PREÇOS) -->
-  <section class="section section-dark" id="planejador">
-    <div class="container">
-      <div class="planner-box reveal">
-        <span class="eyebrow">Simulador Rápido</span>
-        <h2 class="section-title">Monte seu passeio <span class="serif-italic">sob medida</span></h2>
-        <p class="section-desc">
-          Selecione as opções abaixo e envie direto para o WhatsApp da Kelli.
-        </p>
+  <!-- MONTE SEU PASSEIO (SAFIRA PROFUNDO + SIMULADOR RÁPIDO SEM PREÇOS) -->
+  <section class="section theme-sapphire" id="planejador">
+    <div class="wrap">
+      <div class="planner-shell reveal">
+        <div class="planner-box">
+          <span class="kicker">Simulador Rápido</span>
+          <h2 class="sec-title">Monte seu passeio <span class="serif-italic">em segundos.</span></h2>
+          <p class="sec-sub">Escolha como prefere ir e envie a mensagem pronta para o WhatsApp da Kelli.</p>
 
-        <div class="planner-grid">
-          <div>
-            <!-- 1. Modalidade -->
-            <div class="planner-group">
-              <label class="planner-label">1. Formato do passeio</label>
-              <div class="pill-selector" id="modSelector">
-                <button type="button" class="choice-btn active" data-val="Lancha Privativa">
-                  <strong>🚤 Lancha Privativa</strong>
-                  <span>Só o seu grupo</span>
-                </button>
-                <button type="button" class="choice-btn" data-val="Passeio Compartilhado">
-                  <strong>👥 Compartilhado</strong>
-                  <span>Vagas por pessoa</span>
-                </button>
-              </div>
-            </div>
-
-            <!-- 2. Paradas -->
-            <div class="planner-group">
-              <label class="planner-label">2. Paradas desejadas</label>
-              <div class="stops-check-grid" id="stopsSelector">
-                <button type="button" class="stop-check active" data-stop="Cânions de Capitólio">
-                  <span class="check-box">✓</span>
-                  <span>Cânions de Capitólio</span>
-                </button>
-                <button type="button" class="stop-check active" data-stop="Lagoa Azul">
-                  <span class="check-box">✓</span>
-                  <span>Lagoa Azul</span>
-                </button>
-                <button type="button" class="stop-check active" data-stop="Vale dos Tucanos">
-                  <span class="check-box">✓</span>
-                  <span>Vale dos Tucanos</span>
-                </button>
-              </div>
-            </div>
-
-            <!-- 3. Pessoas e Pets -->
-            <div class="planner-group">
-              <label class="planner-label">3. Quantidade de pessoas</label>
-              <div class="steppers-row">
-                <div class="stepper-card">
-                  <div class="stepper-info"><strong>Adultos</strong></div>
-                  <div class="stepper-controls">
-                    <button type="button" class="step-btn" onclick="changeStep('adultos', -1)">−</button>
-                    <span class="step-val" id="val-adultos">2</span>
-                    <button type="button" class="step-btn" onclick="changeStep('adultos', 1)">+</button>
-                  </div>
-                </div>
-
-                <div class="stepper-card">
-                  <div class="stepper-info"><strong>Crianças</strong></div>
-                  <div class="stepper-controls">
-                    <button type="button" class="step-btn" onclick="changeStep('criancas', -1)">−</button>
-                    <span class="step-val" id="val-criancas">0</span>
-                    <button type="button" class="step-btn" onclick="changeStep('criancas', 1)">+</button>
-                  </div>
-                </div>
-
-                <div class="stepper-card">
-                  <div class="stepper-info"><strong>Pets 🐾</strong></div>
-                  <div class="stepper-controls">
-                    <button type="button" class="step-btn" onclick="changeStep('pets', -1)">−</button>
-                    <span class="step-val" id="val-pets">0</span>
-                    <button type="button" class="step-btn" onclick="changeStep('pets', 1)">+</button>
-                  </div>
+          <div class="planner-grid">
+            <div>
+              <!-- 1. Modalidade -->
+              <div class="planner-group">
+                <label class="planner-label">1. Formato do passeio</label>
+                <div class="pill-selector" id="modSelector">
+                  <button type="button" class="choice-btn active" data-val="Lancha Privativa">
+                    <strong>🚤 Lancha Privativa</strong>
+                    <span>Só o seu grupo</span>
+                  </button>
+                  <button type="button" class="choice-btn" data-val="Passeio Compartilhado">
+                    <strong>👥 Compartilhado</strong>
+                    <span>Vagas por pessoa</span>
+                  </button>
                 </div>
               </div>
+
+              <!-- 2. Paradas -->
+              <div class="planner-group">
+                <label class="planner-label">2. Paradas do roteiro</label>
+                <div class="stops-check-grid" id="stopsSelector">
+                  <button type="button" class="stop-check active" data-stop="Cânions de Capitólio">
+                    <span class="check-box">✓</span>
+                    <span>Cânions de Capitólio</span>
+                  </button>
+                  <button type="button" class="stop-check active" data-stop="Lagoa Azul">
+                    <span class="check-box">✓</span>
+                    <span>Lagoa Azul</span>
+                  </button>
+                  <button type="button" class="stop-check active" data-stop="Vale dos Tucanos">
+                    <span class="check-box">✓</span>
+                    <span>Vale dos Tucanos</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- 3. Pessoas e Pets -->
+              <div class="planner-group">
+                <label class="planner-label">3. Quem vai</label>
+                <div class="steppers-row">
+                  <div class="stepper-card">
+                    <div class="stepper-info"><strong>Adultos</strong></div>
+                    <div class="stepper-controls">
+                      <button type="button" class="step-btn" onclick="changeStep('adultos', -1)">−</button>
+                      <span class="step-val" id="val-adultos">2</span>
+                      <button type="button" class="step-btn" onclick="changeStep('adultos', 1)">+</button>
+                    </div>
+                  </div>
+
+                  <div class="stepper-card">
+                    <div class="stepper-info"><strong>Crianças</strong></div>
+                    <div class="stepper-controls">
+                      <button type="button" class="step-btn" onclick="changeStep('criancas', -1)">−</button>
+                      <span class="step-val" id="val-criancas">0</span>
+                      <button type="button" class="step-btn" onclick="changeStep('criancas', 1)">+</button>
+                    </div>
+                  </div>
+
+                  <div class="stepper-card">
+                    <div class="stepper-info"><strong>Pets 🐾</strong></div>
+                    <div class="stepper-controls">
+                      <button type="button" class="step-btn" onclick="changeStep('pets', -1)">−</button>
+                      <span class="step-val" id="val-pets">0</span>
+                      <button type="button" class="step-btn" onclick="changeStep('pets', 1)">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4. Período e Data -->
+              <div class="planner-group">
+                <label class="planner-label">4. Período e data (opcional)</label>
+                <div class="pill-selector" id="periodoSelector" style="margin-bottom: 10px;">
+                  <button type="button" class="choice-btn active" data-val="Manhã">
+                    <strong>☀️ Manhã</strong>
+                  </button>
+                  <button type="button" class="choice-btn" data-val="Tarde">
+                    <strong>🌅 Tarde</strong>
+                  </button>
+                  <button type="button" class="choice-btn" data-val="Dia Inteiro">
+                    <strong>⚓ Dia Inteiro</strong>
+                  </button>
+                </div>
+                <input type="date" id="pData" class="input-field" aria-label="Data do passeio">
+              </div>
             </div>
 
-            <!-- 4. Período e Data -->
-            <div class="planner-group" style="margin-bottom: 0;">
-              <label class="planner-label">4. Período e data (opcional)</label>
-              <div class="pill-selector" id="periodoSelector" style="margin-bottom: 12px;">
-                <button type="button" class="choice-btn active" data-val="Manhã">
-                  <strong>☀️ Manhã</strong>
-                </button>
-                <button type="button" class="choice-btn" data-val="Tarde">
-                  <strong>🌅 Tarde</strong>
-                </button>
-                <button type="button" class="choice-btn" data-val="Dia Inteiro">
-                  <strong>⚓ Dia Inteiro</strong>
-                </button>
+            <!-- Resumo -->
+            <aside class="planner-summary">
+              <strong style="font-family: var(--font-display); font-size: 1rem; color: #fff;">Mensagem pronta para envio</strong>
+              <div class="summary-preview" id="pResumo">
+                Olá, Kelli, tudo bem? Estou com 2 adultos e queria marcar um passeio de lancha (Lancha Privativa), período Manhã, conhecendo: Cânions de Capitólio, Lagoa Azul, Vale dos Tucanos.
               </div>
-              <input type="date" id="pData" class="input-field" aria-label="Data do passeio">
-            </div>
+              <a href="https://wa.me/5535998235432" target="_blank" rel="noopener" id="btnEnviarWa" class="btn-primary" style="width: 100%;">
+                <span>Falar com Kelli</span>
+                <span class="btn-icon-circle">→</span>
+              </a>
+            </aside>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <!-- Resumo -->
-          <aside class="planner-summary">
-            <strong style="font-family: var(--font-display); font-size: 1.05rem;">Mensagem pronta</strong>
-            <div class="summary-preview" id="pResumo">
-              Olá, Kelli, tudo bem? Estou com 2 adultos e queria marcar um passeio de lancha (Lancha Privativa), período Manhã, conhecendo: Cânions de Capitólio, Lagoa Azul, Vale dos Tucanos.
+  <!-- A LANCHA & A PILOTO KELLI (BENTO EM AZUL LAGOA TEXTURIZADO) -->
+  <section class="section theme-lagoon" id="piloto">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="kicker">Conforto &amp; Segurança</span>
+        <h2 class="sec-title">Com Kelli e Dara, você só se preocupa <span class="serif-italic">com a foto.</span></h2>
+      </div>
+
+      <div class="bento-pilot-grid">
+        <div class="pilot-photos-shell reveal">
+          <div class="pilot-photos-grid">
+            <figure>
+              <picture>
+                <source srcset="img/canions-corredor.webp" type="image/webp">
+                <img src="img/canions-corredor.jpg" alt="Navegação pelos Cânions de Capitólio com a Kelli Roque" loading="lazy" data-lightbox>
+              </picture>
+            </figure>
+            <figure>
+              <picture>
+                <source srcset="img/lancha-furnas.webp" type="image/webp">
+                <img src="img/lancha-furnas.jpg" alt="Lancha equipada no Lago de Furnas" loading="lazy" data-lightbox>
+              </picture>
+            </figure>
+          </div>
+        </div>
+
+        <div class="pilot-perks-shell reveal">
+          <div class="pilot-perks-card">
+            <div>
+              <h3 style="font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 6px;">Navegação tranquila com a piloto Kelli Roque</h3>
+              <p style="font-size: 0.92rem; color: var(--text-dim);">Atendimento rápido no WhatsApp com a <strong>Dara</strong> e passeio sem pressa pelos pontos mais bonitos do lago.</p>
             </div>
-            <a href="https://wa.me/5535998235432" target="_blank" rel="noopener" id="btnEnviarWa" class="btn-wa-full">
+
+            <ul class="perks-list">
+              <li><span class="perk-ico">⚓</span>Pilotagem segura</li>
+              <li><span class="perk-ico">🎵</span>Som Bluetooth &amp; Cooler</li>
+              <li><span class="perk-ico">🦺</span>Coletes e flutuadores</li>
+              <li><span class="perk-ico">🐾</span>Pet Friendly a bordo</li>
+            </ul>
+
+            <a href="https://wa.me/5535998235432?text=Ol%C3%A1%2C%20Kelli!%20Vim%20pelo%20site%20e%20quero%20agendar%20um%20passeio%20de%20lancha." target="_blank" rel="noopener" class="btn-primary">
               <span>Falar com Kelli</span>
-              <span>→</span>
+              <span class="btn-icon-circle">→</span>
             </a>
-          </aside>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- A PILOTO KELLI ROQUE -->
-  <section class="section" id="piloto">
-    <div class="container">
-      <div class="pilot-card reveal">
-        <div class="pilot-photo">
-          <picture>
-            <source srcset="img/canions-corredor.webp" type="image/webp">
-            <img src="img/canions-corredor.jpg" alt="Navegação pelos Cânions de Capitólio — Passeios Kelli Roque" loading="lazy" data-lightbox>
-          </picture>
-        </div>
-        <div class="pilot-body">
-          <span class="eyebrow" style="color: var(--blue-300); background: rgba(56,189,248,0.16);">Sua Piloto em Capitólio</span>
-          <h2 class="section-title">Passeio seguro e animado com a <span class="serif-italic">Kelli Roque</span></h2>
-          <p class="section-desc" style="color: rgba(240, 247, 255, 0.84);">
-            Condução prudente, lancha impecável com som Bluetooth e cooler a bordo, e atendimento ágil pelo WhatsApp com a <strong>Dara</strong> e a <strong>Kelli</strong>.
-          </p>
-          <div class="pilot-badges">
-            <span class="pilot-pill">⚓ Pilotagem Segura</span>
-            <span class="pilot-pill">🎵 Som Bluetooth &amp; Cooler</span>
-            <span class="pilot-pill">⭐ 5,0 ★ (174 Avaliações)</span>
           </div>
-          <a href="https://wa.me/5535998235432?text=Ol%C3%A1%2C%20Kelli!%20Vim%20pelo%20site%20e%20quero%20agendar%20um%20passeio%20de%20lancha." target="_blank" rel="noopener" class="btn-primary">
-            <span>Falar com Kelli</span>
-            <span>→</span>
-          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- GALERIA DE FOTOS -->
-  <section class="section section-soft" id="galeria">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="eyebrow">Galeria · Toque para Ampliar</span>
-        <h2 class="section-title">Cenários do nosso <span class="serif-italic">passeio</span></h2>
+  <!-- GALERIA DE FOTOS (FUNDO SAFIRA PROFUNDO + BENTO / SWIPE) -->
+  <section class="section theme-sapphire" id="galeria">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="kicker">Galeria · Toque para Ampliar</span>
+        <h2 class="sec-title">Água verde-esmeralda, <span class="serif-italic">sem filtro.</span></h2>
       </div>
 
-      <div class="gallery-grid">
-        <figure class="gallery-item reveal">
+      <div class="gal-track">
+        <figure class="gal-item tall reveal">
           <img src="img/canions-kelli-1.webp" alt="Cânions de Capitólio — Queda d'água" loading="lazy" data-lightbox>
-          <figcaption class="gallery-cap">Cânions de Capitólio</figcaption>
+          <figcaption class="gal-cap">Cânions de Capitólio</figcaption>
         </figure>
-        <figure class="gallery-item reveal">
-          <img src="img/lagoa-azul.webp" alt="Lagoa Azul e deck flutuante em Capitólio" loading="lazy" data-lightbox>
-          <figcaption class="gallery-cap">Lagoa Azul</figcaption>
-        </figure>
-        <figure class="gallery-item reveal">
-          <img src="img/vale-dos-tucanos-2.webp" alt="Paredões do Vale dos Tucanos" loading="lazy" data-lightbox>
-          <figcaption class="gallery-cap">Vale dos Tucanos</figcaption>
-        </figure>
-        <figure class="gallery-item reveal">
-          <img src="img/canions-kelli-2.webp" alt="Cachoeira dupla nos Cânions de Capitólio" loading="lazy" data-lightbox>
-          <figcaption class="gallery-cap">Cachoeira dos Cânions</figcaption>
-        </figure>
-        <figure class="gallery-item reveal">
+        <figure class="gal-item wide reveal">
           <img src="img/lagoa-azul-2.webp" alt="Vista aérea da Lagoa Azul e bar flutuante" loading="lazy" data-lightbox>
-          <figcaption class="gallery-cap">Bar Flutuante · Lagoa Azul</figcaption>
+          <figcaption class="gal-cap">Lagoa Azul · Bar Flutuante</figcaption>
         </figure>
-        <figure class="gallery-item reveal">
-          <img src="img/diversao-familia.webp" alt="Diversão nas águas do Lago de Furnas" loading="lazy" data-lightbox>
-          <figcaption class="gallery-cap">Lazer no Lago de Furnas</figcaption>
+        <figure class="gal-item reveal">
+          <img src="img/vale-dos-tucanos-2.webp" alt="Paredões do Vale dos Tucanos" loading="lazy" data-lightbox>
+          <figcaption class="gal-cap">Vale dos Tucanos</figcaption>
+        </figure>
+        <figure class="gal-item reveal">
+          <img src="img/lagoa-azul.webp" alt="Piscina natural na Lagoa Azul" loading="lazy" data-lightbox>
+          <figcaption class="gal-cap">Piscina Natural · Lagoa Azul</figcaption>
+        </figure>
+        <figure class="gal-item tall reveal">
+          <img src="img/canions-kelli-2.webp" alt="Cachoeira dupla nos Cânions de Capitólio" loading="lazy" data-lightbox>
+          <figcaption class="gal-cap">Cachoeira dos Cânions</figcaption>
+        </figure>
+        <figure class="gal-item wide reveal">
+          <img src="img/diversao-familia.webp" alt="Banho nas águas calmas do Lago de Furnas" loading="lazy" data-lightbox>
+          <figcaption class="gal-cap">Banho no Lago de Furnas</figcaption>
         </figure>
       </div>
     </div>
   </section>
 
-  <!-- AVALIAÇÕES NO GOOGLE -->
-  <section class="section" id="avaliacoes">
-    <div class="container">
-      <div class="section-header reveal" style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px; max-width: 100%;">
-        <div>
-          <span class="eyebrow">Google Maps</span>
-          <h2 class="section-title" style="margin-bottom: 0;">Nota 5,0 ★ em <span class="serif-italic">174 avaliações</span></h2>
+  <!-- AVALIAÇÕES NO GOOGLE (INTEGRADO E SEM ESPAÇOS VAZIOS) -->
+  <section class="section theme-lagoon" id="avaliacoes">
+    <div class="wrap">
+      <div class="reviews-bar reveal">
+        <div class="rev-score">
+          <strong>5,0</strong>
+          <div>
+            <span>★★★★★</span>
+            <small>174 avaliações reais no Google Maps</small>
+          </div>
         </div>
         <a href="https://www.google.com/maps/search/?api=1&query=Passeios+de+lancha+Kelli+Roque+Capitolio+MG&query_place_id=ChIJnaD4ukF5eAwRujDiKt4jXFk" target="_blank" rel="noopener noreferrer" class="stop-btn">
-          <span>Ver no Google Maps ↗</span>
+          <span>Ver no Google ↗</span>
         </a>
       </div>
 
-      <div class="reviews-grid">
-        <article class="review-card reveal">
+      <div class="rev-grid">
+        <article class="rev-card reveal">
           <div>
-            <div class="stars">★★★★★</div>
-            <p>"Passeio maravilhoso! A Kelli pilota com muita prudência, coloca música animada e tira fotos incríveis nos Cânions e na Lagoa Azul."</p>
+            <div class="rev-stars">★★★★★</div>
+            <p>"A Kelli pilota com muita prudência, coloca música animada e tira fotos incríveis nos Cânions e na Lagoa Azul."</p>
           </div>
-          <strong style="font-size: 0.85rem; color: var(--text-muted);">Fernanda &amp; Rodrigo · Google</strong>
+          <cite>Fernanda &amp; Rodrigo · Google</cite>
         </article>
 
-        <article class="review-card reveal">
+        <article class="rev-card reveal">
           <div>
-            <div class="stars">★★★★★</div>
-            <p>"Desde o atendimento da Dara no WhatsApp até o embarque na Ponte do Rio Turvo com a Kelli, tudo nota mil. Lancha super limpa e passeio sem pressa."</p>
+            <div class="rev-stars">★★★★★</div>
+            <p>"Desde o atendimento da Dara no WhatsApp até o embarque na Ponte do Rio Turvo com a Kelli, tudo nota mil."</p>
           </div>
-          <strong style="font-size: 0.85rem; color: var(--text-muted);">Lucas Andrade · Google</strong>
+          <cite>Lucas Andrade · Google</cite>
         </article>
 
-        <article class="review-card reveal">
+        <article class="rev-card reveal">
           <div>
-            <div class="stars">★★★★★</div>
-            <p>"Fomos com crianças e nossa cachorrinha. As águas do Vale dos Tucanos e da Lagoa Azul são super calmas. Experiência inesquecível!"</p>
+            <div class="rev-stars">★★★★★</div>
+            <p>"Fomos com crianças e nossa cachorrinha. As águas do Vale dos Tucanos são super calmas. Inesquecível!"</p>
           </div>
-          <strong style="font-size: 0.85rem; color: var(--text-muted);">Camila Souza · Google</strong>
+          <cite>Camila Souza · Google</cite>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- EMBARQUE & MAPA -->
-  <section class="section section-soft" id="embarque">
-    <div class="container">
-      <div class="map-card reveal">
-        <div class="map-info">
-          <span class="eyebrow">Ponto de Embarque</span>
-          <h2 class="section-title" style="font-size: clamp(1.55rem, 2.8vw, 2.2rem);">Ponte do <span class="serif-italic">Rio Turvo</span></h2>
-          <p class="section-desc" style="margin-bottom: 20px;">
-            Rodovia MG-050, KM 306 — Capitólio, MG. O ponto oficial mais próximo dos Cânions e da Lagoa Azul.
-          </p>
-          <div>
-            <a href="https://www.google.com/maps/search/?api=1&query=Passeios+de+lancha+Kelli+Roque+Capitolio+MG&query_place_id=ChIJnaD4ukF5eAwRujDiKt4jXFk" target="_blank" rel="noopener noreferrer" class="btn-primary">
-              <span>Ver no Google Maps ↗</span>
-            </a>
+  <!-- EMBARQUE & PERGUNTAS FREQUENTES (EM SAFIRA PROFUNDO, ZERO FINAL BRANCO) -->
+  <section class="section theme-sapphire" id="embarque">
+    <div class="wrap where-faq-grid">
+      <!-- Mapa de Embarque -->
+      <div class="map-shell reveal">
+        <div class="map-card">
+          <div class="map-info">
+            <div>
+              <span class="kicker">Ponto de Embarque</span>
+              <h2 class="sec-title" style="font-size: clamp(1.5rem, 3vw, 2.1rem);">Ponte do <span class="serif-italic">Rio Turvo.</span></h2>
+            </div>
+            <ul class="info-pills">
+              <li><small>Localização</small><b>Rodovia MG-050, KM 306 · Capitólio, MG</b></li>
+              <li><small>Saídas</small><b>Todos os dias · Manhã e Tarde</b></li>
+              <li><small>Atendimento</small><b>(35) 99823-5432 · Kelli e Dara</b></li>
+            </ul>
+            <div>
+              <a href="https://www.google.com/maps/search/?api=1&query=Passeios+de+lancha+Kelli+Roque+Capitolio+MG&query_place_id=ChIJnaD4ukF5eAwRujDiKt4jXFk" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                <span>Abrir no Google Maps</span>
+                <span class="btn-icon-circle">↗</span>
+              </a>
+            </div>
           </div>
+          <iframe
+            class="map-frame"
+            title="Mapa de Embarque — Passeios de lancha Kelli Roque na Ponte do Rio Turvo"
+            loading="lazy"
+            src="https://www.google.com/maps?q=-20.6428,-46.2755+(Passeios+de+lancha+Kelli+Roque)&hl=pt-BR&z=14&output=embed">
+          </iframe>
         </div>
-        <iframe
-          class="map-frame"
-          title="Mapa de Embarque — Passeios de lancha Kelli Roque na Ponte do Rio Turvo"
-          loading="lazy"
-          src="https://www.google.com/maps?q=-20.6428,-46.2755+(Passeios+de+lancha+Kelli+Roque)&hl=pt-BR&z=14&output=embed">
-        </iframe>
+      </div>
+
+      <!-- FAQ Enxuto 2x2 -->
+      <div id="perguntas">
+        <div class="sec-head reveal" style="margin-bottom: 18px;">
+          <span class="kicker">Dúvidas Rápidas</span>
+          <h2 class="sec-title" style="font-size: clamp(1.45rem, 2.8vw, 2rem);">Perguntas <span class="serif-italic">frequentes.</span></h2>
+        </div>
+
+        <div class="faq-grid">
+          <details class="faq-item reveal" open>
+            <summary>Quais paradas visitamos?</summary>
+            <p>Cânions de Capitólio, Lagoa Azul (com cachoeira e bar flutuante) e Vale dos Tucanos.</p>
+          </details>
+          <details class="faq-item reveal" open>
+            <summary>Onde fica o embarque?</summary>
+            <p>Na Rodovia MG-050, KM 306 (Ponte do Rio Turvo), ponto mais próximo dos Cânions.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Posso levar bebidas?</summary>
+            <p>Sim! A lancha já tem cooler térmico a bordo para manter suas bebidas geladas.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Crianças e pets podem ir?</summary>
+            <p>Sim, temos coletes infantis e adultos homologados e somos Pet Friendly.</p>
+          </details>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- PERGUNTAS FREQUENTES -->
-  <section class="section" id="perguntas">
-    <div class="container">
-      <div class="section-header reveal" style="text-align: center; margin: 0 auto 40px;">
-        <span class="eyebrow">Dúvidas Rápidas</span>
-        <h2 class="section-title">Perguntas <span class="serif-italic">Frequentes</span></h2>
-      </div>
-
-      <div class="faq-list">
-        <details class="faq-item reveal" open>
-          <summary><span>Quais paradas fazem parte do roteiro?</span><span>+</span></summary>
-          <p>Visitamos os Cânions de Capitólio, a Lagoa Azul (com cachoeira e bar flutuante) e o Vale dos Tucanos.</p>
-        </details>
-        <details class="faq-item reveal">
-          <summary><span>Posso levar bebidas e cooler?</span><span>+</span></summary>
-          <p>Sim! A lancha já conta com cooler térmico a bordo para manter suas bebidas geladas.</p>
-        </details>
-        <details class="faq-item reveal">
-          <summary><span>É seguro para crianças e pets?</span><span>+</span></summary>
-          <p>Totalmente seguro. Temos coletes homologados (adulto e infantil), macarrões flutuantes e somos Pet Friendly.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- RODAPÉ -->
-  <footer class="final-cta" id="rodape">
-    <div class="container">
-      <img src="img/logo-kelli.svg" alt="Logo Kelli Roque Passeios Náuticos" width="64" height="64" style="margin: 0 auto 18px;">
-      <h2 class="section-title" style="max-width: 16ch; margin: 0 auto 14px;">
-        Vamos navegar por <span class="serif-italic">Capitólio</span>?
+  <!-- BANNER FINAL COM FOTO CINEMÁTICA -->
+  <section class="final-banner" id="rodape">
+    <picture>
+      <source srcset="img/canions-principal.webp" type="image/webp">
+      <img src="img/canions-principal.jpg" alt="" loading="lazy" decoding="async">
+    </picture>
+    <div class="wrap reveal">
+      <img src="img/logo-kelli.svg" alt="Logo Kelli Roque Passeios Náuticos" width="58" height="58" style="margin: 0 auto 14px;">
+      <h2 class="sec-title" style="max-width: 15ch; margin: 0 auto 12px;">
+        Seu melhor dia em Capitólio <span class="serif-italic">começa aqui.</span>
       </h2>
-      <p class="section-desc" style="margin: 0 auto 28px; color: rgba(240, 247, 255, 0.78);">
+      <p class="sec-sub" style="margin: 0 auto 24px; color: var(--sky-100);">
         Reserve sua lancha privativa ou passeio compartilhado direto no WhatsApp.
       </p>
       <a href="https://wa.me/5535998235432?text=Ol%C3%A1%2C%20Kelli!%20Vim%20pelo%20site%20e%20quero%20agendar%20um%20passeio%20de%20lancha." target="_blank" rel="noopener" class="btn-primary">
         <span>Falar com Kelli</span>
-        <span>→</span>
+        <span class="btn-icon-circle">→</span>
       </a>
+    </div>
+  </section>
 
-      <div class="footer-meta">
-        <div><strong>Passeios de lancha Kelli Roque</strong> · MG-050, KM 306 — Ponte do Rio Turvo, Capitólio - MG</div>
-        <div>WhatsApp: (35) 99823-5432 · Instagram: <a href="https://www.instagram.com/kelli.roque/" target="_blank" rel="noopener" style="text-decoration: underline;">@kelli.roque</a></div>
-      </div>
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <div><strong>Passeios de lancha Kelli Roque</strong> · MG-050, KM 306 — Ponte do Rio Turvo, Capitólio - MG</div>
+      <div>WhatsApp: (35) 99823-5432 · Instagram: <a href="https://www.instagram.com/kelli.roque/" target="_blank" rel="noopener" style="color: var(--sky-300); text-decoration: underline;">@kelli.roque</a></div>
     </div>
   </footer>
 
@@ -1631,14 +2306,23 @@
 
       const el = document.getElementById('pResumo');
       const btn = document.getElementById('btnEnviarWa');
-      if (el) el.textContent = msg;
+      if (el) {
+        el.textContent = msg;
+        if (window.gsap) {
+          gsap.fromTo(el, { borderColor: '#38BDF8', backgroundColor: 'rgba(14,165,233,0.22)' }, { borderColor: 'rgba(125,211,252,0.2)', backgroundColor: 'rgba(3,13,30,0.78)', duration: 0.45 });
+        }
+      }
       if (btn) btn.href = `https://wa.me/5535998235432?text=${encodeURIComponent(msg)}`;
     }
 
     window.changeStep = function(key, delta) {
       const min = key === 'adultos' ? 1 : 0;
       state[key] = Math.max(min, Math.min(30, state[key] + delta));
-      document.getElementById(`val-${key}`).textContent = state[key];
+      const valEl = document.getElementById(`val-${key}`);
+      if (valEl) {
+        valEl.textContent = state[key];
+        if (window.gsap) gsap.fromTo(valEl, { scale: 1.3 }, { scale: 1, duration: 0.25, ease: 'back.out(2)' });
+      }
       updateSummary();
     };
 
@@ -1703,6 +2387,7 @@
       });
       document.getElementById('lightboxClose').addEventListener('click', () => lb.classList.remove('open'));
       lb.addEventListener('click', e => { if (e.target === lb) lb.classList.remove('open'); });
+      window.addEventListener('keydown', e => { if (e.key === 'Escape') lb.classList.remove('open'); });
 
       // Dock mobile
       const dock = document.getElementById('mobileDock');
@@ -1716,17 +2401,59 @@
         targets.forEach(t => io.observe(t));
       }
 
+      // Motion Graphics GSAP + ScrollTrigger
       window.addEventListener('load', () => {
-        if (window.gsap && window.ScrollTrigger) {
-          gsap.registerPlugin(ScrollTrigger);
-          gsap.to('#heroImg', { scale: 1, duration: 2, ease: 'power2.out' });
-          gsap.utils.toArray('.reveal').forEach(el => {
-            gsap.fromTo(el, { y: 24, opacity: 0 }, {
-              y: 0, opacity: 1, duration: 0.7, ease: 'power3.out',
-              scrollTrigger: { trigger: el, start: 'top 88%', once: true }
-            });
-          });
-        }
+        if (!window.gsap || !window.ScrollTrigger || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Barra de progresso no topo
+        gsap.to('#scrollBar', {
+          scaleX: 1,
+          ease: 'none',
+          scrollTrigger: { trigger: document.body, start: 'top top', end: 'bottom bottom', scrub: 0.2 }
+        });
+
+        // Entrada em cascata no Hero + Zoom & Parallax na foto 4K
+        gsap.from('.hero-in', {
+          y: 22,
+          opacity: 0.001,
+          duration: 0.75,
+          stagger: 0.08,
+          ease: 'power3.out',
+          clearProps: 'transform,opacity'
+        });
+
+        gsap.fromTo('#heroImg', { scale: 1.16 }, { scale: 1.06, duration: 2.0, ease: 'power2.out' });
+        gsap.to('#heroImg', {
+          yPercent: 6,
+          ease: 'none',
+          scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true }
+        });
+
+        // Reveal em lotes nas seções
+        ScrollTrigger.batch('.reveal', {
+          start: 'top 88%',
+          once: true,
+          onEnter: els => gsap.from(els, {
+            y: 26,
+            opacity: 0.001,
+            duration: 0.65,
+            stagger: 0.08,
+            ease: 'power3.out',
+            clearProps: 'transform,opacity'
+          })
+        });
+
+        // Animação dos nós da rota náutica
+        gsap.from('.route-node', {
+          x: -14,
+          opacity: 0.001,
+          duration: 0.5,
+          stagger: 0.1,
+          ease: 'power2.out',
+          clearProps: 'transform,opacity',
+          scrollTrigger: { trigger: '.route-map-bar', start: 'top 86%', once: true }
+        });
       });
     });
   </script>
