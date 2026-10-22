@@ -2,29 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://kelli-roque-capitolio.vercel.app/</loc>
+    <loc>https://lanchakelliroque.com.br/</loc>
     <lastmod>2026-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://kelli-roque-capitolio.vercel.app/img/hero-capitolio-4k.jpg</image:loc>
+      <image:loc>https://lanchakelliroque.com.br/img/hero-capitolio-4k.jpg</image:loc>
       <image:title>Passeios de Lancha Kelli Roque — Cânions de Capitólio, Lagoa Azul e Vale dos Tucanos</image:title>
       <image:caption>Passeios de lancha privativos e compartilhados no Lago de Furnas saindo da Ponte do Rio Turvo em Capitólio - MG.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://kelli-roque-capitolio.vercel.app/img/canions-kelli-1.jpg</image:loc>
+      <image:loc>https://lanchakelliroque.com.br/img/canions-kelli-1.jpg</image:loc>
       <image:title>Cânions de Capitólio — Passeios de Lancha Kelli Roque</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://kelli-roque-capitolio.vercel.app/img/canions-kelli-2.jpg</image:loc>
+      <image:loc>https://lanchakelliroque.com.br/img/canions-kelli-2.jpg</image:loc>
       <image:title>Cachoeira dos Cânions de Capitólio — Lago de Furnas</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://kelli-roque-capitolio.vercel.app/img/lagoa-azul.jpg</image:loc>
+      <image:loc>https://lanchakelliroque.com.br/img/lagoa-azul.jpg</image:loc>
       <image:title>Lagoa Azul — Passeio de Lancha em Capitólio MG</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://kelli-roque-capitolio.vercel.app/img/vale-dos-tucanos.jpg</image:loc>
+      <image:loc>https://lanchakelliroque.com.br/img/vale-dos-tucanos.jpg</image:loc>
       <image:title>Vale dos Tucanos — Lago de Furnas em Capitólio MG</image:title>
     </image:image>
   </url>
