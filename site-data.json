@@ -1,0 +1,164 @@
+{
+  "hero": {
+    "ratingText": "5,0 no Google · 174 avaliações",
+    "titleMain": "Os Cânions de Capitólio",
+    "titleItalic": "vistos de dentro.",
+    "lead": "Lancha privativa ou compartilhada pela Lagoa Azul e Vale dos Tucanos com a piloto Kelli Roque.",
+    "btnPrimary": "Montar meu passeio",
+    "btnSecondary": "▶ Assistir apresentação"
+  },
+  "contact": {
+    "whatsapp1": "5535998235432",
+    "whatsapp1Label": "(35) 99823-5432",
+    "whatsapp2": "5537998386917",
+    "whatsapp2Label": "(37) 99838-6917",
+    "instagram": "https://www.instagram.com/kelli.roque/",
+    "instagramHandle": "@kelli.roque",
+    "pilotName": "Kelli Roque",
+    "attendantName": "Dara",
+    "locationTitle": "Ponte do Rio Turvo.",
+    "locationAddress": "Rodovia MG-050, KM 306 · Capitólio, MG",
+    "scheduleText": "Todos os dias · Manhã e Tarde"
+  },
+  "video": {
+    "enabled": true,
+    "badge": "Apresentação · 1:45",
+    "kicker": "Vídeo em Destaque · Kelli Roque",
+    "titleMain": "Veja como é viver Capitólio",
+    "titleItalic": "de dentro da lancha.",
+    "description": "Dê o play com som e sinta a energia do passeio: saída da Ponte do Rio Turvo, navegação segura pelos paredões dos Cânions, banho nas águas calmas e paradas inesquecíveis com a piloto Kelli Roque."
+  },
+  "stops": [
+    {
+      "id": "canions",
+      "enabled": true,
+      "badge": "Parada 01",
+      "shortName": "Cânions",
+      "shortSub": "Paredões e cachoeiras",
+      "title": "Cânions de Capitólio",
+      "tag1": "🪨 Paredões de 20m",
+      "tag2": "🏊 Parada p/ banho",
+      "description": "Paredões gigantes, quedas d'água cristalinas e parada para mergulho com coletes e flutuadores.",
+      "image": "img/canions-principal.jpg",
+      "webp": "img/canions-principal.webp"
+    },
+    {
+      "id": "lagoa-azul",
+      "enabled": true,
+      "badge": "Parada 02",
+      "shortName": "Lagoa Azul",
+      "shortSub": "Piscina e bar flutuante",
+      "title": "Lagoa Azul",
+      "tag1": "🍹 Bar flutuante",
+      "tag2": "💦 Cachoeira",
+      "description": "Água translúcida com cachoeira, piscina natural e bar flutuante para drinks, porções e fotos.",
+      "image": "img/lagoa-azul-2.jpg",
+      "webp": "img/lagoa-azul-2.webp"
+    },
+    {
+      "id": "vale-dos-tucanos",
+      "enabled": true,
+      "badge": "Parada 03",
+      "shortName": "Vale dos Tucanos",
+      "shortSub": "Águas super calmas",
+      "title": "Vale dos Tucanos",
+      "tag1": "🌊 Sem correnteza",
+      "tag2": "👨‍👩‍👧 Ideal p/ família",
+      "description": "Enseada abrigada de águas super calmas, perfeita para nadar com crianças e relaxar em família.",
+      "image": "img/vale-dos-tucanos.jpg",
+      "webp": "img/vale-dos-tucanos.webp"
+    },
+    {
+      "id": "cascata",
+      "enabled": false,
+      "badge": "Parada Extra",
+      "shortName": "Cascata",
+      "shortSub": "Queda d'água",
+      "title": "Cascata Eco Parque",
+      "tag1": "💦 Cachoeira",
+      "tag2": "📸 Fotos",
+      "description": "Parada opcional com queda d'água e complexo natural no Lago de Furnas.",
+      "image": "img/canions-cachoeira.jpg",
+      "webp": "img/canions-cachoeira.webp"
+    }
+  ],
+  "pilot": {
+    "kicker": "Conforto & Segurança",
+    "secTitleMain": "Com Kelli e Dara, você só se preocupa",
+    "secTitleItalic": "com a foto.",
+    "cardTitle": "Navegação tranquila com a piloto Kelli Roque",
+    "cardDescription": "Atendimento rápido no WhatsApp com a Dara e passeio sem pressa pelos pontos mais bonitos do lago.",
+    "photo1": "img/canions-corredor.jpg",
+    "photo1Webp": "img/canions-corredor.webp",
+    "photo2": "img/lancha-furnas.jpg",
+    "photo2Webp": "img/lancha-furnas.webp",
+    "perks": [
+      "⚓ Pilotagem segura",
+      "🎵 Som Bluetooth a bordo",
+      "🦺 Coletes e flutuadores",
+      "🐾 Pet Friendly a bordo"
+    ]
+  },
+  "gallery": [
+    {
+      "enabled": true,
+      "size": "tall",
+      "caption": "Cânions de Capitólio",
+      "image": "img/canions-kelli-1.jpg",
+      "webp": "img/canions-kelli-1.webp"
+    },
+    {
+      "enabled": true,
+      "size": "wide",
+      "caption": "Lagoa Azul · Bar Flutuante",
+      "image": "img/lagoa-azul-2.jpg",
+      "webp": "img/lagoa-azul-2.webp"
+    },
+    {
+      "enabled": true,
+      "size": "normal",
+      "caption": "Vale dos Tucanos",
+      "image": "img/vale-dos-tucanos-2.jpg",
+      "webp": "img/vale-dos-tucanos-2.webp"
+    },
+    {
+      "enabled": true,
+      "size": "normal",
+      "caption": "Piscina Natural · Lagoa Azul",
+      "image": "img/lagoa-azul.jpg",
+      "webp": "img/lagoa-azul.webp"
+    },
+    {
+      "enabled": true,
+      "size": "tall",
+      "caption": "Cachoeira dos Cânions",
+      "image": "img/canions-kelli-2.jpg",
+      "webp": "img/canions-kelli-2.webp"
+    },
+    {
+      "enabled": true,
+      "size": "wide",
+      "caption": "Banho no Lago de Furnas",
+      "image": "img/diversao-familia.jpg",
+      "webp": "img/diversao-familia.webp"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Quais paradas visitamos?",
+      "answer": "Cânions de Capitólio, Lagoa Azul (com cachoeira e bar flutuante) e Vale dos Tucanos."
+    },
+    {
+      "question": "Onde fica o embarque?",
+      "answer": "Na Rodovia MG-050, KM 306 (Ponte do Rio Turvo), ponto mais próximo dos Cânions."
+    },
+    {
+      "question": "Tem passeio privativo e compartilhado?",
+      "answer": "Sim! Você pode fechar a lancha exclusiva para o seu grupo ou reservar vagas no compartilhado."
+    },
+    {
+      "question": "Crianças e pets podem ir?",
+      "answer": "Sim, temos coletes infantis e adultos homologados e somos Pet Friendly."
+    }
+  ]
+}
