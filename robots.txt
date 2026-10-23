@@ -29,4 +29,5 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
+Sitemap: https://kelli-roque-capitolio.vercel.app/sitemap.xml
 Sitemap: https://lanchakelliroque.com.br/sitemap.xml
